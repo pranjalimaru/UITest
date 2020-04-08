@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">UITest</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name = "multiple_select_age">
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+        <item> 12 </item>
+        <item> 13 </item>
+        <item> 14 </item>
+
+    </string-array>
+
+    <string-array name="choices">
+        <item> Total Persons </item>
+        <item> Total Males </item>
+        <item> Total Females </item>
+        <item> Educated People who are Main Workers </item>
+        <item> Educated Men who are Main Workers</item>
+        <item> Educated Women who are Main Workers</item>
+        <item> Educated People who are Marginal Workers and worked for 3 to 6 months</item>
+        <item> Educated Men who are Marginal Workers and worked for 3 to 6 months</item>
+        <item> Educated Women who are Marginal Workers and worked for 3 to 6 months</item>
+        <item> Educated People who are Marginal Workers and worked for less than 3 months</item>
+        <item> Educated Men who are Marginal Workers and worked for less than 3 months</item>
+        <item> Educated Women who are Marginal Workers and worked for less than 3 months</item>
+        <item> Educated People who are Non-Workers</item>
+        <item> Educated Men who are Non-Workers</item>
+        <item> Educated Women who are Non-Workers</item>
+        <item> Un-Educated People who are Main Workers</item>
+        <item> Un-Educated Men who are Main Workers</item>
+        <item> Un-Educated Women who are Main Workers</item>
+        <item> Un-Educated People who are Marginal Workers and worked for 3 to 6 months</item>
+        <item> Un-Educated Men who are Marginal Workers and worked for 3 to 6 months</item>
+        <item> Un-Educated Women who are Marginal Workers and worked for 3 to 6 months</item>
+        <item> Un-Educated People who are Marginal Workers and worked for less than 3 months</item>
+        <item> Un-Educated Men who are Marginal Workers and worked for less than 3 months</item>
+        <item> Un-Educated Women who are Marginal Workers and worked for less than 3 months</item>
+        <item> Un-Educated People who are Non-Workers</item>
+        <item> Un-Educated Men who are Non-Workers</item>
+        <item> Un-Educated Women who are Non-Workers</item>
+    </string-array>
+
+    <string-array name="districts">
+        <item>Kachchh</item>
+        <item>Banas Kantha</item>
+        <item>Patan</item>
+        <item>Mahesana</item>
+        <item>Sabar Kantha</item>
+        <item>Gandhinagar</item>
+        <item>Ahmadabad</item>
+        <item>Surendranagar</item>
+        <item>Rajkot</item>
+        <item>Jamnagar</item>
+        <item>Porbandar</item>
+        <item>Junagadh</item>
+        <item>Amreli</item>
+        <item>Bhavnagar</item>
+        <item>Anand</item>
+        <item>Kheda</item>
+        <item>Panch Mahals</item>
+        <item>Dohad</item>
+        <item>Vadodara</item>
+        <item>Narmada</item>
+        <item>Bharuch</item>
+        <item>The Dangs</item>
+        <item>Navsari</item>
+        <item>Valsad</item>
+        <item>Surat</item>
+        <item>Tapi</item>
+    </string-array>
+</resources>

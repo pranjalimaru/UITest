@@ -1,0 +1,30 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:right="5dp" android:top="5dp">
+                <shape>
+                    <corners android:radius="3dp" />
+                    <solid android:color="#D6D6D6" />
+                </shape>
+            </item>
+            <item android:bottom="2dp" android:left="2dp">
+                <shape>
+                    <gradient android:angle="270"
+                        android:endColor="#3680CBC4" android:startColor="#3680CBC4" />
+                    <stroke android:width="2dp" android:color="#BABABA" />
+                    <corners android:radius="10dp" />
+                    <padding android:bottom="10dp" android:left="10dp"
+                        android:right="20dp" android:top="20dp" />
+                </shape>
+            </item>
+            <shape
+                android:shape="rectangle" android:padding="10dp">
+                <!-- you can use any color you want I used here gray color-->
+                <solid android:color="#ABABAB"/>
+                <corners android:radius="15dp"/>
+            </shape>
+
+        </layer-list>
+    </item>
+
+</selector>
