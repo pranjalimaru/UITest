@@ -1,35 +1,33 @@
 package com.example.android.uitest.ui.send;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
-
+import android.widget.Button;
+import com.example.android.uitest.LoginFiles.Login;
 import com.example.android.uitest.R;
+import com.google.firebase.auth.FirebaseAuth;
 
-public class SendFragment extends Fragment {
+public class SendFragment extends AppCompatActivity {
+    private Button logout;
+    private FirebaseAuth firebaseAuth;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_logout);
 
-    private SendViewModel sendViewModel;
+        logout = (Button) findViewById(R.id.LogoutButton);
+        firebaseAuth = FirebaseAuth.getInstance();
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_send, container, false);
-        final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
+        logout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onClick(View view) {
+                firebaseAuth.signOut();
+                finish();
+                startActivity(new Intent(com.example.android.uitest.ui.send.SendFragment.this, Login.class));
             }
         });
-        return root;
     }
 }

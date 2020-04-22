@@ -5,4 +5,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="tab_background_selected">#4DB6AC</color>
     <color name="tab_bckground_unselected">#80CBC4</color>
+    <color name="MainColor">#00BCD4</color>
+
 </resources>

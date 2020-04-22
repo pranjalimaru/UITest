@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NotesFiles.NoteWindow"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/noteTitleValue"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textCursorDrawable="@drawable/favcolor"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint=" Untitled Note"
+            android:inputType="textPersonName"
+
+            android:textColorHint="#123456"
+
+            app:layout_constraintBottom_toTopOf="@+id/editNote"
+            app:layout_constraintEnd_toStartOf="@+id/saveButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/noteTitleText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/noteTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="serif"
+            android:text="Title:"
+            android:textColor="#00574B"
+            android:textSize="10pt"
+            app:layout_constraintBottom_toTopOf="@+id/editNote"
+            app:layout_constraintEnd_toStartOf="@+id/noteTitleValue"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/saveButton"
+            android:layout_width="47dp"
+            android:layout_height="53dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/save_note"
+            android:src="@drawable/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/noteTitleValue"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/editNote"
+            android:layout_width="match_parent"
+            android:layout_height="577dp"
+            android:autofillHints="@string/note_hint"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@drawable/favcolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noteTitleValue"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

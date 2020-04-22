@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:text="Display multiple characteristics for different states/cities"
+            style="@style/buttonDesign"
+            android:clickable="true"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:text="display classification of rural and urban areas for different states/cities"
+            style="@style/buttonDesign"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            style="@style/buttonDesign"
+            android:text="Display multiple age groups with a characteristics for different states/cities"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+        <Button
+            android:id="@+id/button4"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            style="@style/buttonDesign"
+            android:text="Display multiple characteristics for Rural/Urban area"
+            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <Button
+            android:id="@+id/button5"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            style="@style/buttonDesign"
+            android:text="Display multiple districts classified into Rural/urban area"
+            app:layout_constraintBottom_toTopOf="@+id/button6"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+        <Button
+            android:id="@+id/button6"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            style="@style/buttonDesign"
+            android:text="display multiple age groups for a characteristic in rural/urban area"
+            app:layout_constraintBottom_toTopOf="@+id/button7"
+            app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+        <Button
+            android:id="@+id/button7"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            style="@style/buttonDesign"
+            android:text="Display multiple characteristics for different ages"
+            app:layout_constraintBottom_toTopOf="@+id/button8"
+            app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+        <Button
+            android:id="@+id/button8"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            style="@style/buttonDesign"
+            android:text="Display rural/urban classification for different ages"
+            app:layout_constraintBottom_toTopOf="@+id/button9"
+            app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+        <Button
+            android:id="@+id/button9"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            style="@style/buttonDesign"
+            android:text="Display multiple states with a characteristic for different ages"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

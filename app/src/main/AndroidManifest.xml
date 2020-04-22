@@ -4,49 +4,173 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="AA Data"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Graph333"></activity>
-        <activity android:name=".Graph323" />
-        <activity android:name=".Graph313" />
-        <activity android:name=".Graph233" />
-        <activity android:name=".Graph223" />
-        <activity android:name=".Graph213" />
-        <activity android:name=".Graph133" />
-        <activity android:name=".Graph123" />
-        <activity android:name=".Graph113" />
-        <activity android:name=".Graph332" />
-        <activity android:name=".Graph322" />
-        <activity android:name=".Graph312" />
-        <activity android:name=".Graph232" />
-        <activity android:name=".Graph222" />
-        <activity android:name=".Graph212" />
-        <activity android:name=".Graph132" />
-        <activity android:name=".Graph122" />
-        <activity android:name=".Graph112" />
-        <activity android:name=".Graph33" />
-        <activity android:name=".Graph32" />
-        <activity android:name=".Graph31" />
-        <activity android:name=".Graph23" />
-        <activity android:name=".Graph22" />
-        <activity android:name=".Graph21" />
-        <activity android:name=".Graph13" />
-        <activity android:name=".Graph12" />
-        <activity android:name=".Graph11" />
-        <activity android:name=".Try" />
+        <activity android:name=".AndhraPradesh.AndhraPradesh33" android:label="Andhra Pradesh"></activity>
+        <activity android:name=".AndhraPradesh.AndhraPradesh32" android:label="Andhra Pradesh"/>
+        <activity android:name=".AndhraPradesh.AndhraPradesh31" android:label="Andhra Pradesh"/>
+        <activity android:name=".AndhraPradesh.AndhraPradesh23" android:label="Andhra Pradesh"/>
+        <activity android:name=".AndhraPradesh.AndhraPradesh22" android:label="Andhra Pradesh"/>
+        <activity android:name=".AndhraPradesh.AndhraPradesh21" android:label="Andhra Pradesh"/>
+        <activity android:name=".AndhraPradesh.AndhraPradesh13" android:label="Andhra Pradesh"/>
+        <activity android:name=".AndhraPradesh.AndhraPradesh12" android:label="Andhra Pradesh"/>
+        <activity android:name=".AndhraPradesh.AndhraPradesh11" android:label="Andhra Pradesh"/>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".AndamanNicobar.AndamanNicobar33"
+            android:label="Andaman Nicobar" />
+        <activity
+            android:name=".AndamanNicobar.AndamanNicobar32"
+            android:label="Andaman Nicobar" />
+        <activity
+            android:name=".AndamanNicobar.AndamanNicobar31"
+            android:label="Andaman Nicobar" />
+        <activity
+            android:name=".AndamanNicobar.AndamanNicobar23"
+            android:label="Andaman Nicobar" />
+        <activity
+            android:name=".AndamanNicobar.AndamanNicobar22"
+            android:label="Andaman Nicobar" />
+        <activity
+            android:name=".AndamanNicobar.AndamanNicobar21"
+            android:label="Andaman Nicobar" />
+        <activity
+            android:name=".AndamanNicobar.AndamanNicobar13"
+            android:label="Andaman Nicobar" />
+        <activity
+            android:name=".AndamanNicobar.AndamanNicobar12"
+            android:label="Andaman Nicobar" />
+        <activity
+            android:name=".AndamanNicobar.AndamanNicobar11"
+            android:label="Andaman Nicobar" />
+        <activity android:name=".StatesFront.WestBengalFront" />
+        <activity android:name=".StatesFront.UttrakhandFront" />
+        <activity android:name=".StatesFront.UttarPradeshFront" />
+        <activity android:name=".StatesFront.TripuraFront" />
+        <activity android:name=".StatesFront.TamilNaduFront" />
+        <activity android:name=".StatesFront.SikkimFront" />
+        <activity android:name=".StatesFront.RajasthanFront" />
+        <activity android:name=".StatesFront.PunjabFront" />
+        <activity android:name=".StatesFront.PondicherryFront" />
+        <activity android:name=".StatesFront.OdishaFront" />
+        <activity android:name=".StatesFront.NagalandFront" />
+        <activity android:name=".StatesFront.MizoramFront" />
+        <activity android:name=".StatesFront.MeghalayaFront" />
+        <activity android:name=".StatesFront.ManipurFront" />
+        <activity android:name=".StatesFront.MaharashtraFront" />
+        <activity android:name=".StatesFront.MadhyaPradeshFront" />
+        <activity android:name=".StatesFront.LakshadweepFront" />
+        <activity android:name=".StatesFront.KeralaFront" />
+        <activity android:name=".StatesFront.KarnatakaFront" />
+        <activity android:name=".StatesFront.JharkhandFront" />
+        <activity android:name=".StatesFront.JammuKashmirFront" />
+        <activity android:name=".StatesFront.HimachalPradeshFront" />
+        <activity android:name=".StatesFront.HaryanaFront" />
+        <activity android:name=".StatesFront.GoaFront" />
+        <activity android:name=".StatesFront.NCTDelhiFront" />
+        <activity android:name=".StatesFront.DamanDiuFront" />
+        <activity android:name=".StatesFront.DadraNagarHaveliFront" />
+        <activity android:name=".StatesFront.ChhatisgarhFront" />
+        <activity android:name=".StatesFront.ChandigarhFront" />
+        <activity android:name=".StatesFront.BiharFront" />
+        <activity android:name=".StatesFront.AssamFront" />
+        <activity android:name=".StatesFront.ArunachalPradeshFront" />
+        <activity android:name=".StatesFront.AndhraPradeshFront"  android:label="Andhra Pradesh"/>
+        <activity
+            android:name=".StatesFront.AndamanNicobarFront"
+            android:label="Andaman Nicobar" />
+        <activity
+            android:name=".StatesFront.GujaratFront"
+            android:label="Gujarat" />
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginFiles.ChangePassword"
+            android:label="Change Password" />
+        <activity
+            android:name=".LoginFiles.Login"
+            android:label="Login" />
+        <activity
+            android:name=".LoginFiles.Password"
+            android:label="Change Password" />
+        <activity android:name=".LoginFiles.ProfileActivity" />
+        <activity
+            android:name=".LoginFiles.Register"
+            android:label="Register" />
+        <activity android:name=".LoginFiles.UpdateProfile" />
+        <activity android:name=".ui.send.SendFragment" />
+        <activity android:name=".LoginFiles.DisplayProfile" />
+        <activity android:name=".ViewPager.NavHeader" />
+        <activity android:name=".ui.tools.ToolsFragment" />
+        <activity android:name=".NotesFiles.Notepad" />
+        <activity android:name=".NotesFiles.Notes" />
+        <activity android:name=".NotesFiles.NoteWindow" />
+        <activity
+            android:name=".Gujarat.Gujarat33"
+            android:label="Gujarat" />
+        <activity
+            android:name=".Gujarat.Gujarat32"
+            android:label="Gujarat" />
+        <activity
+            android:name=".Gujarat.Gujarat31"
+            android:label="Gujarat" />
+        <activity
+            android:name=".Gujarat.Gujarat23"
+            android:label="Gujarat" />
+        <activity
+            android:name=".Gujarat.Gujarat22"
+            android:label="Gujarat" />
+        <activity
+            android:name=".Gujarat.Gujarat21"
+            android:label="Gujarat" />
+        <activity
+            android:name=".Gujarat.Gujarat13"
+            android:label="Gujarat" />
+        <activity
+            android:name=".Gujarat.Gujarat12"
+            android:label="Gujarat" />
+        <activity
+            android:name=".Gujarat.Gujarat11"
+            android:label="Gujarat" />
+        <activity
+            android:name=".India.India33"
+            android:label="India" />
+        <activity
+            android:name=".India.India32"
+            android:label="India" />
+        <activity
+            android:name=".India.India31"
+            android:label="India" />
+        <activity
+            android:name=".India.India23"
+            android:label="India" />
+        <activity
+            android:name=".India.India22"
+            android:label="India" />
+        <activity
+            android:name=".India.India21"
+            android:label="India" />
+        <activity
+            android:name=".India.India13"
+            android:label="India" />
+        <activity
+            android:name=".India.India12"
+            android:label="India" />
+        <activity
+            android:name=".India.India11"
+            android:label="India" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
