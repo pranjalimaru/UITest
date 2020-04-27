@@ -141,7 +141,7 @@
 
         <Button
             android:id="@+id/graphButton"
-            android:text="Graph confirm"
+            android:text="Confirm graph type"
             style="@style/buttonDesign"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"

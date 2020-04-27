@@ -17,9 +17,7 @@ import com.example.android.uitest.StatesFront.AndhraPradeshFront;
 import com.example.android.uitest.StatesFront.ArunachalPradeshFront;
 import com.example.android.uitest.StatesFront.AssamFront;
 import com.example.android.uitest.StatesFront.BiharFront;
-import com.example.android.uitest.StatesFront.ChandigarhFront;
 import com.example.android.uitest.StatesFront.ChhatisgarhFront;
-import com.example.android.uitest.StatesFront.DadraNagarHaveliFront;
 import com.example.android.uitest.StatesFront.DamanDiuFront;
 import com.example.android.uitest.StatesFront.GoaFront;
 import com.example.android.uitest.StatesFront.GujaratFront;
@@ -29,7 +27,6 @@ import com.example.android.uitest.StatesFront.JammuKashmirFront;
 import com.example.android.uitest.StatesFront.JharkhandFront;
 import com.example.android.uitest.StatesFront.KarnatakaFront;
 import com.example.android.uitest.StatesFront.KeralaFront;
-import com.example.android.uitest.StatesFront.LakshadweepFront;
 import com.example.android.uitest.StatesFront.MadhyaPradeshFront;
 import com.example.android.uitest.StatesFront.MaharashtraFront;
 import com.example.android.uitest.StatesFront.ManipurFront;
@@ -75,9 +72,7 @@ public class one extends Fragment {
         Button ArunachalPradesh = rootView.findViewById(R.id.ArunachalPradesh);
         Button Assam = rootView.findViewById(R.id.Assam);
         Button Bihar = rootView.findViewById(R.id.Bihar);
-        Button Chandigarh = rootView.findViewById(R.id.Chandigarh);
         Button Chhatisgarh = rootView.findViewById(R.id.Chhatisgarh);
-        Button DadraNagarHaveli = rootView.findViewById(R.id.DadraNagarHaveli);
         Button DamanDiu = rootView.findViewById(R.id.DamanDiu);
         Button NCTDelhi = rootView.findViewById(R.id.NCTDelhi);
         Button Goa = rootView.findViewById(R.id.Goa);
@@ -87,7 +82,6 @@ public class one extends Fragment {
         Button Jharkhand = rootView.findViewById(R.id.Jharkhand);
         Button Karnataka = rootView.findViewById(R.id.Karnataka);
         Button Kerala = rootView.findViewById(R.id.Kerala);
-        Button Lakshadweep = rootView.findViewById(R.id.Lakshadweep);
         Button MadhyaPradesh = rootView.findViewById(R.id.MadhyaPradesh);
         Button Maharashtra = rootView.findViewById(R.id.Maharashtra);
         Button Manipur = rootView.findViewById(R.id.Manipur);
@@ -154,13 +148,6 @@ public class one extends Fragment {
             }
         });
 
-        Chandigarh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, ChandigarhFront.class);
-                startActivity(intent);
-            }
-        });
 
         Chhatisgarh.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -170,13 +157,7 @@ public class one extends Fragment {
             }
         });
 
-        DadraNagarHaveli.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, DadraNagarHaveliFront.class);
-                startActivity(intent);
-            }
-        });
+
 
         DamanDiu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -250,13 +231,7 @@ public class one extends Fragment {
             }
         });
 
-        Lakshadweep.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, LakshadweepFront.class);
-                startActivity(intent);
-            }
-        });
+
 
         MadhyaPradesh.setOnClickListener(new View.OnClickListener() {
             @Override

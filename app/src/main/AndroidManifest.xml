@@ -10,15 +10,780 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AndhraPradesh.AndhraPradesh33" android:label="Andhra Pradesh"></activity>
-        <activity android:name=".AndhraPradesh.AndhraPradesh32" android:label="Andhra Pradesh"/>
-        <activity android:name=".AndhraPradesh.AndhraPradesh31" android:label="Andhra Pradesh"/>
-        <activity android:name=".AndhraPradesh.AndhraPradesh23" android:label="Andhra Pradesh"/>
-        <activity android:name=".AndhraPradesh.AndhraPradesh22" android:label="Andhra Pradesh"/>
-        <activity android:name=".AndhraPradesh.AndhraPradesh21" android:label="Andhra Pradesh"/>
-        <activity android:name=".AndhraPradesh.AndhraPradesh13" android:label="Andhra Pradesh"/>
-        <activity android:name=".AndhraPradesh.AndhraPradesh12" android:label="Andhra Pradesh"/>
-        <activity android:name=".AndhraPradesh.AndhraPradesh11" android:label="Andhra Pradesh"/>
+        <activity android:name=".WestBengal.wb33" android:label="West Bengal"></activity>
+        <activity android:name=".WestBengal.wb32" android:label="West Bengal"/>
+        <activity android:name=".WestBengal.wb31" android:label="West Bengal"/>
+        <activity android:name=".WestBengal.wb23" android:label="West Bengal"/>
+        <activity android:name=".WestBengal.wb22" android:label="West Bengal"/>
+        <activity android:name=".WestBengal.wb21" android:label="West Bengal"/>
+        <activity android:name=".WestBengal.wb13" android:label="West Bengal"/>
+        <activity android:name=".WestBengal.wb12" android:label="West Bengal"/>
+        <activity android:name=".WestBengal.wb11" android:label="West Bengal"/>
+        <activity android:name=".UttarPradesh.up33" android:label="Uttar Pradesh"/>
+        <activity android:name=".UttarPradesh.up32" android:label="Uttar Pradesh"/>
+        <activity android:name=".UttarPradesh.up31" android:label="Uttar Pradesh"/>
+        <activity android:name=".UttarPradesh.up23" android:label="Uttar Pradesh"/>
+        <activity android:name=".UttarPradesh.up22" android:label="Uttar Pradesh"/>
+        <activity android:name=".UttarPradesh.up21" android:label="Uttar Pradesh"/>
+        <activity android:name=".UttarPradesh.up13" android:label="Uttar Pradesh"/>
+        <activity android:name=".UttarPradesh.up12" android:label="Uttar Pradesh"/>
+        <activity android:name=".UttarPradesh.up11" android:label="Uttar Pradesh"/>
+        <activity
+            android:name=".Uttrakhand.utr33"
+            android:label="Uttrakhand" />
+        <activity
+            android:name=".Uttrakhand.utr32"
+            android:label="Uttrakhand" />
+        <activity
+            android:name=".Uttrakhand.utr31"
+            android:label="Uttrakhand" />
+        <activity
+            android:name=".Uttrakhand.utr23"
+            android:label="Uttrakhand" />
+        <activity
+            android:name=".Uttrakhand.utr22"
+            android:label="Uttrakhand" />
+        <activity
+            android:name=".Uttrakhand.utr21"
+            android:label="Uttrakhand" />
+        <activity
+            android:name=".Uttrakhand.utr13"
+            android:label="Uttrakhand" />
+        <activity
+            android:name=".Uttrakhand.utr12"
+            android:label="Uttrakhand" />
+        <activity
+            android:name=".Uttrakhand.utr11"
+            android:label="Uttrakhand" />
+        <activity
+            android:name=".Tripura.tri33"
+            android:label="Tripura" />
+        <activity
+            android:name=".Tripura.tri32"
+            android:label="Tripura" />
+        <activity
+            android:name=".Tripura.tri31"
+            android:label="Tripura" />
+        <activity
+            android:name=".Tripura.tri23"
+            android:label="Tripura" />
+        <activity
+            android:name=".Tripura.tri22"
+            android:label="Tripura" />
+        <activity
+            android:name=".Tripura.tri21"
+            android:label="Tripura" />
+        <activity
+            android:name=".Tripura.tri13"
+            android:label="Tripura" />
+        <activity
+            android:name=".Tripura.tri12"
+            android:label="Tripura" />
+        <activity
+            android:name=".Tripura.tri11"
+            android:label="Tripura" />
+        <activity
+            android:name=".TamilNadu.tn33"
+            android:label="Tamil Nadu" />
+        <activity
+            android:name=".TamilNadu.tn32"
+            android:label="Tamil Nadu" />
+        <activity
+            android:name=".TamilNadu.tn31"
+            android:label="Tamil Nadu" />
+        <activity
+            android:name=".TamilNadu.tn23"
+            android:label="Tamil Nadu" />
+        <activity
+            android:name=".TamilNadu.tn22"
+            android:label="Tamil Nadu" />
+        <activity
+            android:name=".TamilNadu.tn21"
+            android:label="Tamil Nadu" />
+        <activity
+            android:name=".TamilNadu.tn13"
+            android:label="Tamil Nadu" />
+        <activity
+            android:name=".TamilNadu.tn12"
+            android:label="Tamil Nadu" />
+        <activity
+            android:name=".TamilNadu.tn11"
+            android:label="Tamil Nadu" />
+        <activity
+            android:name=".Sikkim.sik33"
+            android:label="Sikkim" />
+        <activity
+            android:name=".Sikkim.sik32"
+            android:label="Sikkim" />
+        <activity
+            android:name=".Sikkim.sik31"
+            android:label="Sikkim" />
+        <activity
+            android:name=".Sikkim.sik23"
+            android:label="Sikkim" />
+        <activity
+            android:name=".Sikkim.sik22"
+            android:label="Sikkim" />
+        <activity
+            android:name=".Sikkim.sik21"
+            android:label="Sikkim" />
+        <activity
+            android:name=".Sikkim.sik13"
+            android:label="Sikkim" />
+        <activity
+            android:name=".Sikkim.sik12"
+            android:label="Sikkim" />
+        <activity
+            android:name=".Sikkim.sik11"
+            android:label="Sikkim" />
+        <activity
+            android:name=".Rajasthan.rjs33"
+            android:label="Rajasthan" />
+        <activity
+            android:name=".Rajasthan.rjs32"
+            android:label="Rajasthan" />
+        <activity
+            android:name=".Rajasthan.rjs31"
+            android:label="Rajasthan" />
+        <activity
+            android:name=".Rajasthan.rjs23"
+            android:label="Rajasthan" />
+        <activity
+            android:name=".Rajasthan.rjs22"
+            android:label="Rajasthan" />
+        <activity
+            android:name=".Rajasthan.rjs21"
+            android:label="Rajasthan" />
+        <activity
+            android:name=".Rajasthan.rjs13"
+            android:label="Rajasthan" />
+        <activity
+            android:name=".Rajasthan.rjs12"
+            android:label="Rajasthan" />
+        <activity
+            android:name=".Rajasthan.rjs11"
+            android:label="Rajasthan" />
+        <activity
+            android:name=".Punjab.pj33"
+            android:label="Punjab" />
+        <activity
+            android:name=".Punjab.pj32"
+            android:label="Punjab" />
+        <activity
+            android:name=".Punjab.pj31"
+            android:label="Punjab" />
+        <activity
+            android:name=".Punjab.pj23"
+            android:label="Punjab" />
+        <activity
+            android:name=".Punjab.pj22"
+            android:label="Punjab" />
+        <activity
+            android:name=".Punjab.pj21"
+            android:label="Punjab" />
+        <activity
+            android:name=".Punjab.pj13"
+            android:label="Punjab" />
+        <activity
+            android:name=".Punjab.pj12"
+            android:label="Punjab" />
+        <activity
+            android:name=".Punjab.pj11"
+            android:label="Punjab" />
+        <activity
+            android:name=".Puducherry.pdy33"
+            android:label="Pondicherry" />
+        <activity
+            android:name=".Puducherry.pdy32"
+            android:label="Pondicherry" />
+        <activity
+            android:name=".Puducherry.pdy31"
+            android:label="Pondicherry" />
+        <activity
+            android:name=".Puducherry.pdy23"
+            android:label="Pondicherry" />
+        <activity
+            android:name=".Puducherry.pdy22"
+            android:label="Pondicherry" />
+        <activity
+            android:name=".Puducherry.pdy21"
+            android:label="Pondicherry" />
+        <activity
+            android:name=".Puducherry.pdy13"
+            android:label="Pondicherry" />
+        <activity
+            android:name=".Puducherry.pdy12"
+            android:label="Pondicherry" />
+        <activity
+            android:name=".Puducherry.pdy11"
+            android:label="Pondicherry" />
+        <activity
+            android:name=".Odisha.odisha33"
+            android:label="Odisha" />
+        <activity
+            android:name=".Odisha.odisha32"
+            android:label="Odisha" />
+        <activity
+            android:name=".Odisha.odisha31"
+            android:label="Odisha" />
+        <activity
+            android:name=".Odisha.odisha23"
+            android:label="Odisha" />
+        <activity
+            android:name=".Odisha.odisha22"
+            android:label="Odisha" />
+        <activity
+            android:name=".Odisha.odisha21"
+            android:label="Odisha" />
+        <activity
+            android:name=".Odisha.odisha13"
+            android:label="Odisha" />
+        <activity
+            android:name=".Odisha.odisha12"
+            android:label="Odisha" />
+        <activity
+            android:name=".Odisha.odisha11"
+            android:label="Odisha" />
+        <activity
+            android:name=".Nagaland.ngl33"
+            android:label="Nagaland" />
+        <activity
+            android:name=".Nagaland.ngl32"
+            android:label="Nagaland" />
+        <activity
+            android:name=".Nagaland.ngl31"
+            android:label="Nagaland" />
+        <activity
+            android:name=".Nagaland.ngl23"
+            android:label="Nagaland" />
+        <activity
+            android:name=".Nagaland.ngl22"
+            android:label="Nagaland" />
+        <activity
+            android:name=".Nagaland.ngl21"
+            android:label="Nagaland" />
+        <activity
+            android:name=".Nagaland.ngl13"
+            android:label="Nagaland" />
+        <activity
+            android:name=".Nagaland.ngl12"
+            android:label="Nagaland" />
+        <activity
+            android:name=".Nagaland.ngl11"
+            android:label="Nagaland" />
+        <activity
+            android:name=".Mizoram.mizoram33"
+            android:label="Mizoram" />
+        <activity
+            android:name=".Mizoram.mizoram32"
+            android:label="Mizoram" />
+        <activity
+            android:name=".Mizoram.mizoram31"
+            android:label="Mizoram" />
+        <activity
+            android:name=".Mizoram.mizoram23"
+            android:label="Mizoram" />
+        <activity
+            android:name=".Mizoram.mizoram22"
+            android:label="Mizoram" />
+        <activity
+            android:name=".Mizoram.mizoram21"
+            android:label="Mizoram" />
+        <activity
+            android:name=".Mizoram.mizoram13"
+            android:label="Mizoram" />
+        <activity
+            android:name=".Mizoram.mizoram12"
+            android:label="Mizoram" />
+        <activity
+            android:name=".Mizoram.mizoram11"
+            android:label="Mizoram" />
+        <activity
+            android:name=".Meghalaya.mgh23"
+            android:label="Meghalaya" />
+        <activity
+            android:name=".Meghalaya.mgh33"
+            android:label="Meghalaya" />
+        <activity
+            android:name=".Meghalaya.mgh32"
+            android:label="Meghalaya" />
+        <activity
+            android:name=".Meghalaya.mgh31"
+            android:label="Meghalaya" />
+        <activity
+            android:name=".Meghalaya.mgh22"
+            android:label="Meghalaya" />
+        <activity
+            android:name=".Meghalaya.mgh21"
+            android:label="Meghalaya" />
+        <activity
+            android:name=".Meghalaya.mgh13"
+            android:label="Meghalaya" />
+        <activity
+            android:name=".Meghalaya.mgh12"
+            android:label="Meghalaya" />
+        <activity
+            android:name=".Meghalaya.mgh11"
+            android:label="Meghalaya" />
+        <activity
+            android:name=".Manipur.manipur33"
+            android:label="Manipur" />
+        <activity
+            android:name=".Manipur.manipur32"
+            android:label="Manipur" />
+        <activity
+            android:name=".Manipur.manipur31"
+            android:label="Manipur" />
+        <activity
+            android:name=".Manipur.manipur23"
+            android:label="Manipur" />
+        <activity
+            android:name=".Manipur.manipur22"
+            android:label="Manipur" />
+        <activity
+            android:name=".Manipur.manipur21"
+            android:label="Manipur" />
+        <activity
+            android:name=".Manipur.manipur13"
+            android:label="Manipur" />
+        <activity
+            android:name=".Manipur.manipur12"
+            android:label="Manipur" />
+        <activity
+            android:name=".Manipur.manipur11"
+            android:label="Manipur" />
+        <activity
+            android:name=".Maharashtra.mht33"
+            android:label="Maharashtra" />
+        <activity
+            android:name=".Maharashtra.mht32"
+            android:label="Maharashtra" />
+        <activity
+            android:name=".Maharashtra.mht31"
+            android:label="Maharashtra" />
+        <activity
+            android:name=".Maharashtra.mht23"
+            android:label="Maharashtra" />
+        <activity
+            android:name=".Maharashtra.mht22"
+            android:label="Maharashtra" />
+        <activity
+            android:name=".Maharashtra.mht21"
+            android:label="Maharashtra" />
+        <activity
+            android:name=".Maharashtra.mht13"
+            android:label="Maharashtra" />
+        <activity
+            android:name=".Maharashtra.mht12"
+            android:label="Maharashtra" />
+        <activity
+            android:name=".Maharashtra.mht11"
+            android:label="Maharashtra" />
+        <activity
+            android:name=".MadhyaPradesh.mp33"
+            android:label="Madhya Pradesh" />
+        <activity
+            android:name=".MadhyaPradesh.mp32"
+            android:label="Madhya Pradesh" />
+        <activity
+            android:name=".MadhyaPradesh.mp31"
+            android:label="Madhya Pradesh" />
+        <activity
+            android:name=".MadhyaPradesh.mp23"
+            android:label="Madhya Pradesh" />
+        <activity
+            android:name=".MadhyaPradesh.mp22"
+            android:label="Madhya Pradesh" />
+        <activity
+            android:name=".MadhyaPradesh.mp21"
+            android:label="Madhya Pradesh" />
+        <activity
+            android:name=".MadhyaPradesh.mp13"
+            android:label="Madhya Pradesh" />
+        <activity
+            android:name=".MadhyaPradesh.mp12"
+            android:label="Madhya Pradesh" />
+        <activity
+            android:name=".MadhyaPradesh.mp11"
+            android:label="Madhya Pradesh" />
+        <activity
+            android:name=".Kerala.Kerala33"
+            android:label="Kerala" />
+        <activity
+            android:name=".Kerala.Kerala32"
+            android:label="Kerala" />
+        <activity
+            android:name=".Kerala.Kerala31"
+            android:label="Kerala" />
+        <activity
+            android:name=".Kerala.Kerala23"
+            android:label="Kerala" />
+        <activity
+            android:name=".Kerala.Kerala22"
+            android:label="Kerala" />
+        <activity
+            android:name=".Kerala.Kerala21"
+            android:label="Kerala" />
+        <activity
+            android:name=".Kerala.Kerala13"
+            android:label="Kerala" />
+        <activity
+            android:name=".Kerala.Kerala12"
+            android:label="Kerala" />
+        <activity
+            android:name=".Kerala.Kerala11"
+            android:label="Kerala" />
+        <activity
+            android:name=".Karnataka.kt33"
+            android:label="Karnataka" />
+        <activity
+            android:name=".Karnataka.kt32"
+            android:label="Karnataka" />
+        <activity
+            android:name=".Karnataka.kt31"
+            android:label="Karnataka" />
+        <activity
+            android:name=".Karnataka.kt23"
+            android:label="Karnataka" />
+        <activity
+            android:name=".Karnataka.kt22"
+            android:label="Karnataka" />
+        <activity
+            android:name=".Karnataka.kt21"
+            android:label="Karnataka" />
+        <activity
+            android:name=".Karnataka.kt13"
+            android:label="Karnataka" />
+        <activity
+            android:name=".Karnataka.kt12"
+            android:label="Karnataka" />
+        <activity
+            android:name=".Karnataka.kt11"
+            android:label="Karnataka" />
+        <activity
+            android:name=".Jharkhand.jh33"
+            android:label="Jharkhand" />
+        <activity
+            android:name=".Jharkhand.jh32"
+            android:label="Jharkhand" />
+        <activity
+            android:name=".Jharkhand.jh31"
+            android:label="Jharkhand" />
+        <activity
+            android:name=".Jharkhand.jh23"
+            android:label="Jharkhand" />
+        <activity
+            android:name=".Jharkhand.jh22"
+            android:label="Jharkhand" />
+        <activity
+            android:name=".Jharkhand.jh21"
+            android:label="Jharkhand" />
+        <activity
+            android:name=".Jharkhand.jh13"
+            android:label="Jharkhand" />
+        <activity
+            android:name=".Jharkhand.jh12"
+            android:label="Jharkhand" />
+        <activity
+            android:name=".Jharkhand.jh11"
+            android:label="Jharkhand" />
+        <activity
+            android:name=".JammuKashmir.jk33"
+            android:label="Jammu Kashmir" />
+        <activity
+            android:name=".JammuKashmir.jk32"
+            android:label="Jammu Kashmir" />
+        <activity
+            android:name=".JammuKashmir.jk31"
+            android:label="Jammu Kashmir" />
+        <activity
+            android:name=".JammuKashmir.jk23"
+            android:label="Jammu Kashmir" />
+        <activity
+            android:name=".JammuKashmir.jk22"
+            android:label="Jammu Kashmir" />
+        <activity
+            android:name=".JammuKashmir.jk21"
+            android:label="Jammu Kashmir" />
+        <activity
+            android:name=".JammuKashmir.jk13"
+            android:label="Jammu Kashmir" />
+        <activity
+            android:name=".JammuKashmir.jk12"
+            android:label="Jammu Kashmir" />
+        <activity
+            android:name=".JammuKashmir.jk11"
+            android:label="Jammu Kashmir" />
+        <activity
+            android:name=".HimachalPradesh.hp33"
+            android:label="Himachal Pradesh" />
+        <activity
+            android:name=".HimachalPradesh.hp32"
+            android:label="Himachal Pradesh" />
+        <activity
+            android:name=".HimachalPradesh.hp31"
+            android:label="Himachal Pradesh" />
+        <activity
+            android:name=".HimachalPradesh.hp23"
+            android:label="Himachal Pradesh" />
+        <activity
+            android:name=".HimachalPradesh.hp22"
+            android:label="Himachal Pradesh" />
+        <activity
+            android:name=".HimachalPradesh.hp21"
+            android:label="Himachal Pradesh" />
+        <activity
+            android:name=".HimachalPradesh.hp13"
+            android:label="Himachal Pradesh" />
+        <activity
+            android:name=".HimachalPradesh.hp12"
+            android:label="Himachal Pradesh" />
+        <activity
+            android:name=".HimachalPradesh.hp11"
+            android:label="Himachal Pradesh" />
+        <activity
+            android:name=".Haryana.Haryana33"
+            android:label="Haryana" />
+        <activity
+            android:name=".Haryana.Haryana32"
+            android:label="Haryana" />
+        <activity
+            android:name=".Haryana.Haryana31"
+            android:label="Haryana" />
+        <activity
+            android:name=".Haryana.Haryana23"
+            android:label="Haryana" />
+        <activity
+            android:name=".Haryana.Haryana22"
+            android:label="Haryana" />
+        <activity
+            android:name=".Haryana.Haryana21"
+            android:label="Haryana" />
+        <activity
+            android:name=".Haryana.Haryana13"
+            android:label="Haryana" />
+        <activity
+            android:name=".Haryana.Haryana12"
+            android:label="Haryana" />
+        <activity
+            android:name=".Haryana.Haryana11"
+            android:label="Haryana" />
+        <activity
+            android:name=".Goa.Goa33"
+            android:label="Goa" />
+        <activity
+            android:name=".Goa.Goa32"
+            android:label="Goa" />
+        <activity
+            android:name=".Goa.Goa31"
+            android:label="Goa" />
+        <activity
+            android:name=".Goa.Goa23"
+            android:label="Goa" />
+        <activity
+            android:name=".Goa.Goa22"
+            android:label="Goa" />
+        <activity
+            android:name=".Goa.Goa21"
+            android:label="Goa" />
+        <activity
+            android:name=".Goa.Goa13"
+            android:label="Goa" />
+        <activity
+            android:name=".Goa.Goa12"
+            android:label="Goa" />
+        <activity
+            android:name=".Goa.Goa11"
+            android:label="Goa" />
+        <activity
+            android:name=".Delhi.Delhi33"
+            android:label="Delhi" />
+        <activity
+            android:name=".Delhi.Delhi32"
+            android:label="Delhi" />
+        <activity
+            android:name=".Delhi.Delhi31"
+            android:label="Delhi" />
+        <activity
+            android:name=".Delhi.Delhi23"
+            android:label="Delhi" />
+        <activity
+            android:name=".Delhi.Delhi22"
+            android:label="Delhi" />
+        <activity
+            android:name=".Delhi.Delhi21"
+            android:label="Delhi" />
+        <activity
+            android:name=".Delhi.Delhi13"
+            android:label="Delhi" />
+        <activity
+            android:name=".Delhi.Delhi12"
+            android:label="Delhi" />
+        <activity
+            android:name=".Delhi.Delhi11"
+            android:label="Delhi" />
+        <activity
+            android:name=".Diu.Diu33"
+            android:label="Daman and Diu" />
+        <activity
+            android:name=".Diu.Diu32"
+            android:label="Daman and Diu" />
+        <activity
+            android:name=".Diu.Diu31"
+            android:label="Daman and Diu" />
+        <activity
+            android:name=".Diu.Diu23"
+            android:label="Daman and Diu" />
+        <activity
+            android:name=".Diu.Diu22"
+            android:label="Daman and Diu" />
+        <activity
+            android:name=".Diu.Diu21"
+            android:label="Daman and Diu" />
+        <activity
+            android:name=".Diu.Diu13"
+            android:label="Daman and Diu" />
+        <activity
+            android:name=".Diu.Diu12"
+            android:label="Daman and Diu" />
+        <activity
+            android:name=".Diu.Diu11"
+            android:label="Daman and Diu" />
+        <activity
+            android:name=".Chhatisgarh.Chhatisgarh33"
+            android:label="Chhatisgarh" />
+        <activity
+            android:name=".Chhatisgarh.Chhatisgarh32"
+            android:label="Chhatisgarh" />
+        <activity
+            android:name=".Chhatisgarh.Chhatisgarh31"
+            android:label="Chhatisgarh" />
+        <activity
+            android:name=".Chhatisgarh.Chhatisgarh23"
+            android:label="Chhatisgarh" />
+        <activity
+            android:name=".Chhatisgarh.Chhatisgarh22"
+            android:label="Chhatisgarh" />
+        <activity
+            android:name=".Chhatisgarh.Chhatisgarh21"
+            android:label="Chhatisgarh" />
+        <activity
+            android:name=".Chhatisgarh.Chhatisgarh13"
+            android:label="Chhatisgarh" />
+        <activity
+            android:name=".Chhatisgarh.Chhatisgarh12"
+            android:label="Chhatisgarh" />
+        <activity
+            android:name=".Chhatisgarh.Chhatisgarh11"
+            android:label="Chhatisgarh" />
+        <activity
+            android:name=".Bihar.Bihar33"
+            android:label="Bihar" />
+        <activity
+            android:name=".Bihar.Bihar32"
+            android:label="Bihar" />
+        <activity
+            android:name=".Bihar.Bihar31"
+            android:label="Bihar" />
+        <activity
+            android:name=".Bihar.Bihar23"
+            android:label="Bihar" />
+        <activity
+            android:name=".Bihar.Bihar22"
+            android:label="Bihar" />
+        <activity
+            android:name=".Bihar.Bihar21"
+            android:label="Bihar" />
+        <activity
+            android:name=".Bihar.Bihar13"
+            android:label="Bihar" />
+        <activity
+            android:name=".Bihar.Bihar12"
+            android:label="Bihar" />
+        <activity
+            android:name=".Bihar.Bihar11"
+            android:label="Bihar" />
+        <activity
+            android:name=".Assam.Assam33"
+            android:label="Assam" />
+        <activity
+            android:name=".Assam.Assam32"
+            android:label="Assam" />
+        <activity
+            android:name=".Assam.Assam31"
+            android:label="Assam" />
+        <activity
+            android:name=".Assam.Assam23"
+            android:label="Assam" />
+        <activity
+            android:name=".Assam.Assam22"
+            android:label="Assam" />
+        <activity
+            android:name=".Assam.Assam21"
+            android:label="Assam" />
+        <activity
+            android:name=".Assam.Assam13"
+            android:label="Assam" />
+        <activity
+            android:name=".Assam.Assam12"
+            android:label="Assam" />
+        <activity
+            android:name=".Assam.Assam11"
+            android:label="Assam" />
+        <activity
+            android:name=".Arunachal.Arunachal33"
+            android:label="Arunachal Pradesh" />
+        <activity
+            android:name=".Arunachal.Arunachal32"
+            android:label="Arunachal Pradesh" />
+        <activity
+            android:name=".Arunachal.Arunachal31"
+            android:label="Arunachal Pradesh" />
+        <activity
+            android:name=".Arunachal.Arunachal23"
+            android:label="Arunachal Pradesh" />
+        <activity
+            android:name=".Arunachal.Arunachal22"
+            android:label="Arunachal Pradesh" />
+        <activity
+            android:name=".Arunachal.Arunachal21"
+            android:label="Arunachal Pradesh" />
+        <activity
+            android:name=".Arunachal.Arunachal13"
+            android:label="Arunachal Pradesh" />
+        <activity
+            android:name=".Arunachal.Arunachal12"
+            android:label="Arunachal Pradesh" />
+        <activity
+            android:name=".Arunachal.Arunachal11"
+            android:label="Arunachal Pradesh" />
+        <activity
+            android:name=".AndhraPradesh.AndhraPradesh33"
+            android:label="Andhra Pradesh" />
+        <activity
+            android:name=".AndhraPradesh.AndhraPradesh32"
+            android:label="Andhra Pradesh" />
+        <activity
+            android:name=".AndhraPradesh.AndhraPradesh31"
+            android:label="Andhra Pradesh" />
+        <activity
+            android:name=".AndhraPradesh.AndhraPradesh23"
+            android:label="Andhra Pradesh" />
+        <activity
+            android:name=".AndhraPradesh.AndhraPradesh22"
+            android:label="Andhra Pradesh" />
+        <activity
+            android:name=".AndhraPradesh.AndhraPradesh21"
+            android:label="Andhra Pradesh" />
+        <activity
+            android:name=".AndhraPradesh.AndhraPradesh13"
+            android:label="Andhra Pradesh" />
+        <activity
+            android:name=".AndhraPradesh.AndhraPradesh12"
+            android:label="Andhra Pradesh" />
+        <activity
+            android:name=".AndhraPradesh.AndhraPradesh11"
+            android:label="Andhra Pradesh" />
         <activity
             android:name=".AndamanNicobar.AndamanNicobar33"
             android:label="Andaman Nicobar" />
@@ -46,39 +811,92 @@
         <activity
             android:name=".AndamanNicobar.AndamanNicobar11"
             android:label="Andaman Nicobar" />
-        <activity android:name=".StatesFront.WestBengalFront" />
-        <activity android:name=".StatesFront.UttrakhandFront" />
-        <activity android:name=".StatesFront.UttarPradeshFront" />
-        <activity android:name=".StatesFront.TripuraFront" />
-        <activity android:name=".StatesFront.TamilNaduFront" />
-        <activity android:name=".StatesFront.SikkimFront" />
-        <activity android:name=".StatesFront.RajasthanFront" />
-        <activity android:name=".StatesFront.PunjabFront" />
-        <activity android:name=".StatesFront.PondicherryFront" />
-        <activity android:name=".StatesFront.OdishaFront" />
-        <activity android:name=".StatesFront.NagalandFront" />
-        <activity android:name=".StatesFront.MizoramFront" />
-        <activity android:name=".StatesFront.MeghalayaFront" />
-        <activity android:name=".StatesFront.ManipurFront" />
-        <activity android:name=".StatesFront.MaharashtraFront" />
-        <activity android:name=".StatesFront.MadhyaPradeshFront" />
-        <activity android:name=".StatesFront.LakshadweepFront" />
-        <activity android:name=".StatesFront.KeralaFront" />
-        <activity android:name=".StatesFront.KarnatakaFront" />
-        <activity android:name=".StatesFront.JharkhandFront" />
-        <activity android:name=".StatesFront.JammuKashmirFront" />
-        <activity android:name=".StatesFront.HimachalPradeshFront" />
-        <activity android:name=".StatesFront.HaryanaFront" />
-        <activity android:name=".StatesFront.GoaFront" />
-        <activity android:name=".StatesFront.NCTDelhiFront" />
-        <activity android:name=".StatesFront.DamanDiuFront" />
-        <activity android:name=".StatesFront.DadraNagarHaveliFront" />
-        <activity android:name=".StatesFront.ChhatisgarhFront" />
-        <activity android:name=".StatesFront.ChandigarhFront" />
-        <activity android:name=".StatesFront.BiharFront" />
-        <activity android:name=".StatesFront.AssamFront" />
-        <activity android:name=".StatesFront.ArunachalPradeshFront" />
-        <activity android:name=".StatesFront.AndhraPradeshFront"  android:label="Andhra Pradesh"/>
+        <activity android:name=".StatesFront.WestBengalFront" android:label="West Bengal"/>
+        <activity android:name=".StatesFront.UttrakhandFront" android:label="Uttarakhand"/>
+        <activity
+            android:name=".StatesFront.UttarPradeshFront"
+            android:label="Uttar Pradesh" />
+        <activity
+            android:name=".StatesFront.TripuraFront"
+            android:label="Tripura" />
+        <activity
+            android:name=".StatesFront.TamilNaduFront"
+            android:label="Tamil Nadu" />
+        <activity
+            android:name=".StatesFront.SikkimFront"
+            android:label="Sikkim" />
+        <activity
+            android:name=".StatesFront.RajasthanFront"
+            android:label="Rajasthan" />
+        <activity
+            android:name=".StatesFront.PunjabFront"
+            android:label="Punjab" />
+        <activity
+            android:name=".StatesFront.PondicherryFront"
+            android:label="Pondicherry" />
+        <activity
+            android:name=".StatesFront.OdishaFront"
+            android:label="Odisha" />
+        <activity
+            android:name=".StatesFront.NagalandFront"
+            android:label="Nagaland" />
+        <activity
+            android:name=".StatesFront.MizoramFront"
+            android:label="Mizoram" />
+        <activity
+            android:name=".StatesFront.MeghalayaFront"
+            android:label="Meghalaya" />
+        <activity
+            android:name=".StatesFront.ManipurFront"
+            android:label="Manipur" />
+        <activity
+            android:name=".StatesFront.MaharashtraFront"
+            android:label="Maharashtra" />
+        <activity
+            android:name=".StatesFront.MadhyaPradeshFront"
+            android:label="Madhya Pradesh" />
+        <activity
+            android:name=".StatesFront.KeralaFront"
+            android:label="Kerala" />
+        <activity
+            android:name=".StatesFront.KarnatakaFront"
+            android:label="Karnataka" />
+        <activity
+            android:name=".StatesFront.JharkhandFront"
+            android:label="Jharkhand" />
+        <activity
+            android:name=".StatesFront.JammuKashmirFront"
+            android:label="Jammu Kashmir" />
+        <activity
+            android:name=".StatesFront.HimachalPradeshFront"
+            android:label="Himachal Pradesh" />
+        <activity
+            android:name=".StatesFront.HaryanaFront"
+            android:label="Haryana" />
+        <activity
+            android:name=".StatesFront.GoaFront"
+            android:label="Goa" />
+        <activity
+            android:name=".StatesFront.NCTDelhiFront"
+            android:label="Delhi" />
+        <activity
+            android:name=".StatesFront.DamanDiuFront"
+            android:label="Daman and Diu" />
+        <activity
+            android:name=".StatesFront.ChhatisgarhFront"
+            android:label="Chhatisgarh" />
+        <activity
+            android:name=".StatesFront.BiharFront"
+            android:label="Bihar" />
+        <activity
+            android:name=".StatesFront.AssamFront"
+            android:label="Assam" />
+        <activity
+            android:name=".StatesFront.ArunachalPradeshFront"
+            android:label="Arunachal Pradesh" />
+        <activity
+            android:name=".StatesFront.AndhraPradeshFront"
+            android:label="Andhra Pradesh" />
         <activity
             android:name=".StatesFront.AndamanNicobarFront"
             android:label="Andaman Nicobar" />

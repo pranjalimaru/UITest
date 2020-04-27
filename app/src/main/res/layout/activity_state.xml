@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Arunachal Pradesh"
+            android:text="Arunachal Pradesh done"
             app:layout_constraintBottom_toTopOf="@+id/Assam"
             app:layout_constraintTop_toBottomOf="@+id/AndhraPradesh"
             tools:layout_editor_absoluteX="119dp"></Button>
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Assam"
+            android:text="Assam done"
             app:layout_constraintBottom_toTopOf="@+id/Bihar"
             app:layout_constraintTop_toBottomOf="@+id/ArunachalPradesh"
             tools:layout_editor_absoluteX="162dp"></Button>
@@ -55,20 +55,11 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Bihar"
-            app:layout_constraintBottom_toTopOf="@+id/Chandigarh"
+            android:text="Bihar done"
+            app:layout_constraintBottom_toTopOf="@+id/Chhatisgarh"
             app:layout_constraintTop_toBottomOf="@+id/Assam"
             tools:layout_editor_absoluteX="162dp"></Button>
 
-        <Button
-            android:id="@+id/Chandigarh"
-            android:layout_width="match_parent"
-            style="@style/buttonDesign"
-            android:layout_height="wrap_content"
-            android:text="Chandigarh"
-            app:layout_constraintBottom_toTopOf="@+id/Chhatisgarh"
-            app:layout_constraintTop_toBottomOf="@+id/Bihar"
-            tools:layout_editor_absoluteX="149dp"></Button>
 
         <Button
             android:id="@+id/Chhatisgarh"
@@ -76,19 +67,11 @@
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
             android:text="Chhatisgarh"
-            app:layout_constraintBottom_toTopOf="@+id/DadraNagarHaveli"
-            app:layout_constraintTop_toBottomOf="@+id/Chandigarh"
+            app:layout_constraintBottom_toTopOf="@+id/DamanDiu"
+            app:layout_constraintTop_toBottomOf="@+id/Bihar"
             tools:layout_editor_absoluteX="145dp"></Button>
 
-        <Button
-            android:id="@+id/DadraNagarHaveli"
-            android:layout_width="match_parent"
-            style="@style/buttonDesign"
-            android:layout_height="wrap_content"
-            android:text="Dadra Nagar Haveli"
-            app:layout_constraintBottom_toTopOf="@+id/DamanDiu"
-            app:layout_constraintTop_toBottomOf="@+id/Chhatisgarh"
-            tools:layout_editor_absoluteX="120dp"></Button>
+
 
         <Button
             android:id="@+id/DamanDiu"
@@ -97,7 +80,7 @@
             android:layout_height="wrap_content"
             android:text="Daman and Diu"
             app:layout_constraintBottom_toTopOf="@+id/NCTDelhi"
-            app:layout_constraintTop_toBottomOf="@+id/DadraNagarHaveli"
+            app:layout_constraintTop_toBottomOf="@+id/Chhatisgarh"
             tools:layout_editor_absoluteX="139dp"></Button>
 
         <Button
@@ -186,19 +169,10 @@
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
             android:text="Kerala"
-            app:layout_constraintBottom_toTopOf="@+id/Lakshadweep"
+            app:layout_constraintBottom_toTopOf="@+id/MadhyaPradesh"
             app:layout_constraintTop_toBottomOf="@+id/Karnataka"
             tools:layout_editor_absoluteX="162dp"></Button>
 
-        <Button
-            android:id="@+id/Lakshadweep"
-            android:layout_width="match_parent"
-            style="@style/buttonDesign"
-            android:layout_height="wrap_content"
-            android:text="Lakshwadeep"
-            app:layout_constraintBottom_toTopOf="@+id/MadhyaPradesh"
-            app:layout_constraintTop_toBottomOf="@+id/Kerala"
-            tools:layout_editor_absoluteX="144dp"></Button>
 
         <Button
             android:id="@+id/MadhyaPradesh"
@@ -207,7 +181,7 @@
             android:layout_height="wrap_content"
             android:text="Madhya Pradesh"
             app:layout_constraintBottom_toTopOf="@+id/Maharashtra"
-            app:layout_constraintTop_toBottomOf="@+id/Lakshadweep"
+            app:layout_constraintTop_toBottomOf="@+id/Kerala"
             tools:layout_editor_absoluteX="131dp"></Button>
 
         <Button

@@ -135,7 +135,6 @@
     </string-array>
 
     <string-array name="ArunachalPradeshDistricts">
-        <item>Arunachal Pradesh</item>
         <item>Tawang</item>
         <item>West Kameng</item>
         <item>East Kameng</item>
@@ -155,7 +154,6 @@
     </string-array>
 
     <string-array name="AssamDistricts">
-        <item>Assam</item>
         <item>Kokrajhar</item>
         <item>Dhubri</item>
         <item>Goalpara</item>
@@ -264,9 +262,6 @@
         <item>Arwal</item>
     </string-array>
 
-    <string-array name="Chandigarh">
-        <item>Chandigarh</item>
-    </string-array>
 
     <string-array name="Chhatisgarh">
         <item>Koriya</item>
@@ -289,9 +284,6 @@
         <item>Bijapur</item>
     </string-array>
 
-    <string-array name="DadraNagarHaveli">
-        <item>Dadra Nagar Haveli</item>
-    </string-array>
 
     <string-array name="DamanDiu">
         <item>Diu</item>
@@ -456,9 +448,6 @@
         <item>Thiruvananthapuram</item>
     </string-array>
 
-    <string-array name="Lakshadweep">
-        <item>Lakshadweep</item>
-    </string-array>
 
     <string-array name="MadhyaPradesh">
         <item>Sheopur</item>
@@ -595,7 +584,6 @@
         <item>Kiphire</item>
         <item>Kohima</item>
         <item>Peren</item>
-        <item></item>
     </string-array>
 
     <string-array name="Odisha">
