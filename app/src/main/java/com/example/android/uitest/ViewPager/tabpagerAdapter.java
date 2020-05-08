@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 
 public class tabpagerAdapter extends FragmentStatePagerAdapter {
 
-    String[] tabarray = new String[]{"State", "Country"};
+    String[] tabarray = new String[]{"States/UTs", "India"};
     Integer tabNo = 2;
 
     public tabpagerAdapter(@NonNull FragmentManager fm) {

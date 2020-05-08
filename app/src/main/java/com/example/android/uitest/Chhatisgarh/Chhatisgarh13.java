@@ -93,7 +93,7 @@ public class Chhatisgarh13 extends AppCompatActivity implements AdapterView.OnIt
         pointGraph = findViewById(R.id.pointGraph);
         graphConfirm=findViewById(R.id.graphButton);
         displayText=findViewById(R.id.displayText);
-        chhatisgarhPradesh= getResources().getStringArray(R.array.Bihar);
+        chhatisgarhPradesh= getResources().getStringArray(R.array.Chhatisgarh);
 
 
         choiceSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -143,7 +143,7 @@ public class Chhatisgarh13 extends AppCompatActivity implements AdapterView.OnIt
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, choice);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         choiceSpinner.setAdapter(dataAdapter);
 
@@ -330,6 +330,8 @@ public class Chhatisgarh13 extends AppCompatActivity implements AdapterView.OnIt
         StaticLabelsFormatter staticLabelsFormatter = new StaticLabelsFormatter(mGraph);
         //staticLabelsFormatter.setHorizontalLabels(new String[] {"old", "middle", "new"});
         mGraph.getGridLabelRenderer().setLabelFormatter(staticLabelsFormatter);
+        mGraph.getGridLabelRenderer().setHorizontalAxisTitle("Districts");
+
 
     }
 

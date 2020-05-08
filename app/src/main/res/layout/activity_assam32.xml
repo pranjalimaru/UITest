@@ -39,9 +39,10 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
+                android:layout_weight="0.5"
                 android:layout_margin="10dp"
                 android:orientation="vertical">
 
@@ -72,6 +73,7 @@
                 android:id="@+id/districtSpinner"
                 android:layout_width="match_parent"
                 android:layout_margin="10dp"
+                android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 android:gravity="right"></Spinner>
 
@@ -110,9 +112,9 @@
 
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <CheckBox
                 android:id="@+id/barGraph"

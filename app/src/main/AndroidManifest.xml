@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.uitest">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="true"
@@ -10,24 +18,61 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WestBengal.wb33" android:label="West Bengal"></activity>
-        <activity android:name=".WestBengal.wb32" android:label="West Bengal"/>
-        <activity android:name=".WestBengal.wb31" android:label="West Bengal"/>
-        <activity android:name=".WestBengal.wb23" android:label="West Bengal"/>
-        <activity android:name=".WestBengal.wb22" android:label="West Bengal"/>
-        <activity android:name=".WestBengal.wb21" android:label="West Bengal"/>
-        <activity android:name=".WestBengal.wb13" android:label="West Bengal"/>
-        <activity android:name=".WestBengal.wb12" android:label="West Bengal"/>
-        <activity android:name=".WestBengal.wb11" android:label="West Bengal"/>
-        <activity android:name=".UttarPradesh.up33" android:label="Uttar Pradesh"/>
-        <activity android:name=".UttarPradesh.up32" android:label="Uttar Pradesh"/>
-        <activity android:name=".UttarPradesh.up31" android:label="Uttar Pradesh"/>
-        <activity android:name=".UttarPradesh.up23" android:label="Uttar Pradesh"/>
-        <activity android:name=".UttarPradesh.up22" android:label="Uttar Pradesh"/>
-        <activity android:name=".UttarPradesh.up21" android:label="Uttar Pradesh"/>
-        <activity android:name=".UttarPradesh.up13" android:label="Uttar Pradesh"/>
-        <activity android:name=".UttarPradesh.up12" android:label="Uttar Pradesh"/>
-        <activity android:name=".UttarPradesh.up11" android:label="Uttar Pradesh"/>
+        <activity android:name=".simple_spinner_item"></activity>
+        <activity
+            android:name=".WestBengal.wb33"
+            android:label="West Bengal" />
+        <activity
+            android:name=".WestBengal.wb32"
+            android:label="West Bengal" />
+        <activity
+            android:name=".WestBengal.wb31"
+            android:label="West Bengal" />
+        <activity
+            android:name=".WestBengal.wb23"
+            android:label="West Bengal" />
+        <activity
+            android:name=".WestBengal.wb22"
+            android:label="West Bengal" />
+        <activity
+            android:name=".WestBengal.wb21"
+            android:label="West Bengal" />
+        <activity
+            android:name=".WestBengal.wb13"
+            android:label="West Bengal" />
+        <activity
+            android:name=".WestBengal.wb12"
+            android:label="West Bengal" />
+        <activity
+            android:name=".WestBengal.wb11"
+            android:label="West Bengal" />
+        <activity
+            android:name=".UttarPradesh.up33"
+            android:label="Uttar Pradesh" />
+        <activity
+            android:name=".UttarPradesh.up32"
+            android:label="Uttar Pradesh" />
+        <activity
+            android:name=".UttarPradesh.up31"
+            android:label="Uttar Pradesh" />
+        <activity
+            android:name=".UttarPradesh.up23"
+            android:label="Uttar Pradesh" />
+        <activity
+            android:name=".UttarPradesh.up22"
+            android:label="Uttar Pradesh" />
+        <activity
+            android:name=".UttarPradesh.up21"
+            android:label="Uttar Pradesh" />
+        <activity
+            android:name=".UttarPradesh.up13"
+            android:label="Uttar Pradesh" />
+        <activity
+            android:name=".UttarPradesh.up12"
+            android:label="Uttar Pradesh" />
+        <activity
+            android:name=".UttarPradesh.up11"
+            android:label="Uttar Pradesh" />
         <activity
             android:name=".Uttrakhand.utr33"
             android:label="Uttrakhand" />
@@ -811,8 +856,12 @@
         <activity
             android:name=".AndamanNicobar.AndamanNicobar11"
             android:label="Andaman Nicobar" />
-        <activity android:name=".StatesFront.WestBengalFront" android:label="West Bengal"/>
-        <activity android:name=".StatesFront.UttrakhandFront" android:label="Uttarakhand"/>
+        <activity
+            android:name=".StatesFront.WestBengalFront"
+            android:label="West Bengal" />
+        <activity
+            android:name=".StatesFront.UttrakhandFront"
+            android:label="Uttarakhand" />
         <activity
             android:name=".StatesFront.UttarPradeshFront"
             android:label="Uttar Pradesh" />
@@ -927,10 +976,11 @@
         <activity android:name=".ui.send.SendFragment" />
         <activity android:name=".LoginFiles.DisplayProfile" />
         <activity android:name=".ViewPager.NavHeader" />
-        <activity android:name=".ui.tools.ToolsFragment" />
+        <activity android:name=".ui.tools.ToolsFragment" android:label="About AA Data"/>
+        <activity android:name=".ui.gallery.GalleryFragment" android:label="Contact"></activity>
         <activity android:name=".NotesFiles.Notepad" />
-        <activity android:name=".NotesFiles.Notes" />
-        <activity android:name=".NotesFiles.NoteWindow" />
+        <activity android:name=".NotesFiles.Notes" android:label="Make a Note"/>
+        <activity android:name=".NotesFiles.NoteWindow" android:label="Make a Note"/>
         <activity
             android:name=".Gujarat.Gujarat33"
             android:label="Gujarat" />

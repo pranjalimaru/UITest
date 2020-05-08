@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Chhatisgarh"
+            android:text="Chhatisgarh done"
             app:layout_constraintBottom_toTopOf="@+id/DamanDiu"
             app:layout_constraintTop_toBottomOf="@+id/Bihar"
             tools:layout_editor_absoluteX="145dp"></Button>
@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Daman and Diu"
+            android:text="Daman and Diu done"
             app:layout_constraintBottom_toTopOf="@+id/NCTDelhi"
             app:layout_constraintTop_toBottomOf="@+id/Chhatisgarh"
             tools:layout_editor_absoluteX="139dp"></Button>
@@ -88,7 +88,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="NCT Delhi"
+            android:text="NCT Delhi done"
             app:layout_constraintBottom_toTopOf="@+id/Goa"
             app:layout_constraintTop_toBottomOf="@+id/DamanDiu"
             tools:layout_editor_absoluteX="159dp"></Button>
@@ -98,7 +98,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Goa"
+            android:text="Goa done"
             app:layout_constraintBottom_toTopOf="@+id/Gujarat"
             app:layout_constraintTop_toBottomOf="@+id/NCTDelhi"
             tools:layout_editor_absoluteX="162dp"></Button>
@@ -118,7 +118,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Haryana"
+            android:text="Haryana done"
             app:layout_constraintBottom_toTopOf="@+id/HimachalPradesh"
             app:layout_constraintTop_toBottomOf="@+id/Gujarat"
             tools:layout_editor_absoluteX="161dp"></Button>
@@ -128,7 +128,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Himachal Pradesh"
+            android:text="Himachal Pradesh done"
             app:layout_constraintBottom_toTopOf="@+id/JammuKashmir"
             app:layout_constraintTop_toBottomOf="@+id/Haryana"
             tools:layout_editor_absoluteX="124dp"></Button>
@@ -138,7 +138,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Jammu Kashmir"
+            android:text="Jammu Kashmir done"
             app:layout_constraintBottom_toTopOf="@+id/Jharkhand"
             app:layout_constraintTop_toBottomOf="@+id/HimachalPradesh"
             tools:layout_editor_absoluteX="135dp"></Button>
@@ -148,7 +148,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Jharkhand"
+            android:text="Jharkhand done"
             app:layout_constraintBottom_toTopOf="@+id/Karnataka"
             app:layout_constraintTop_toBottomOf="@+id/JammuKashmir"
             tools:layout_editor_absoluteX="152dp"></Button>
@@ -158,7 +158,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Karnataka"
+            android:text="Karnataka done"
             app:layout_constraintBottom_toTopOf="@+id/Kerala"
             app:layout_constraintTop_toBottomOf="@+id/Jharkhand"
             tools:layout_editor_absoluteX="152dp"></Button>
@@ -168,7 +168,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Kerala"
+            android:text="Kerala done"
             app:layout_constraintBottom_toTopOf="@+id/MadhyaPradesh"
             app:layout_constraintTop_toBottomOf="@+id/Karnataka"
             tools:layout_editor_absoluteX="162dp"></Button>
@@ -179,7 +179,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Madhya Pradesh"
+            android:text="Madhya Pradesh done"
             app:layout_constraintBottom_toTopOf="@+id/Maharashtra"
             app:layout_constraintTop_toBottomOf="@+id/Kerala"
             tools:layout_editor_absoluteX="131dp"></Button>
@@ -189,7 +189,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Maharashtra"
+            android:text="Maharashtra done"
             app:layout_constraintBottom_toTopOf="@+id/Manipur"
             app:layout_constraintTop_toBottomOf="@+id/MadhyaPradesh"
             tools:layout_editor_absoluteX="141dp"></Button>
@@ -199,7 +199,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Manipur"
+            android:text="Manipur done"
             app:layout_constraintBottom_toTopOf="@+id/Meghalaya"
             app:layout_constraintTop_toBottomOf="@+id/Maharashtra"
             tools:layout_editor_absoluteX="162dp"></Button>
@@ -209,7 +209,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Meghalaya"
+            android:text="Meghalaya done"
             app:layout_constraintBottom_toTopOf="@+id/Mizoram"
             app:layout_constraintTop_toBottomOf="@+id/Manipur"
             tools:layout_editor_absoluteX="152dp"></Button>
@@ -219,7 +219,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Mizoram"
+            android:text="Mizoram done"
             app:layout_constraintBottom_toTopOf="@+id/Nagaland"
             app:layout_constraintTop_toBottomOf="@+id/Meghalaya"
             tools:layout_editor_absoluteX="161dp"></Button>
@@ -229,7 +229,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Nagaland"
+            android:text="Nagaland done"
             app:layout_constraintBottom_toTopOf="@+id/Odisha"
             app:layout_constraintTop_toBottomOf="@+id/Mizoram"
             tools:layout_editor_absoluteX="156dp"></Button>
@@ -239,7 +239,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Odisha"
+            android:text="Odisha done"
             app:layout_constraintBottom_toTopOf="@+id/Pondicherry"
             app:layout_constraintTop_toBottomOf="@+id/Nagaland"
             tools:layout_editor_absoluteX="162dp"></Button>
@@ -249,7 +249,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Pondicherry"
+            android:text="Pondicherry done"
             app:layout_constraintBottom_toTopOf="@+id/Punjab"
             app:layout_constraintTop_toBottomOf="@+id/Odisha"
             tools:layout_editor_absoluteX="146dp"></Button>
@@ -259,7 +259,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Punjab"
+            android:text="Punjab done"
             app:layout_constraintBottom_toTopOf="@+id/Rajasthan"
             app:layout_constraintTop_toBottomOf="@+id/Pondicherry"
             tools:layout_editor_absoluteX="162dp"></Button>
@@ -269,7 +269,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Rajasthan"
+            android:text="Rajasthan done"
             app:layout_constraintBottom_toTopOf="@+id/Sikkim"
             app:layout_constraintTop_toBottomOf="@+id/Punjab"
             tools:layout_editor_absoluteX="152dp"></Button>
@@ -279,7 +279,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Sikkim"
+            android:text="Sikkim thoda done"
             app:layout_constraintBottom_toTopOf="@+id/TamilNadu"
             app:layout_constraintTop_toBottomOf="@+id/Rajasthan"
             tools:layout_editor_absoluteX="162dp"></Button>
@@ -289,7 +289,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Tamil Nadu"
+            android:text="Tamil Nadu done"
             app:layout_constraintBottom_toTopOf="@+id/Tripura"
             app:layout_constraintTop_toBottomOf="@+id/Sikkim"
             tools:layout_editor_absoluteX="152dp"></Button>
@@ -299,7 +299,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Tripura"
+            android:text="Tripura done"
             app:layout_constraintBottom_toTopOf="@+id/UttarPradesh"
             app:layout_constraintTop_toBottomOf="@+id/TamilNadu"
             tools:layout_editor_absoluteX="162dp"></Button>
@@ -309,7 +309,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Uttar Pradesh"
+            android:text="Uttar Pradesh done"
             app:layout_constraintBottom_toTopOf="@+id/Uttrakhand"
             app:layout_constraintTop_toBottomOf="@+id/Tripura"
             tools:layout_editor_absoluteX="138dp"></Button>
@@ -319,7 +319,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="Uttrakhand"
+            android:text="Uttrakhand done"
             app:layout_constraintBottom_toTopOf="@+id/WestBengal"
             app:layout_constraintTop_toBottomOf="@+id/UttarPradesh"
             tools:layout_editor_absoluteX="147dp"></Button>
@@ -329,7 +329,7 @@
             android:layout_width="match_parent"
             style="@style/buttonDesign"
             android:layout_height="wrap_content"
-            android:text="West Bengal"
+            android:text="West Bengal done"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Uttrakhand"
             tools:layout_editor_absoluteX="147dp"></Button>

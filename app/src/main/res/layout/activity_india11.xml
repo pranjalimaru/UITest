@@ -113,27 +113,27 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-        <CheckBox
-            android:id="@+id/barGraph"
-            android:text="Bar Graph"
-            android:buttonTint="@color/colorPrimaryDark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/barGraph"
+                android:text="Bar Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
 
-        <CheckBox
-            android:id="@+id/lineGraph"
-            android:text="Line Graph"
-            android:buttonTint="@color/colorPrimaryDark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            <CheckBox
+                android:id="@+id/lineGraph"
+                android:text="Line Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
 
-        <CheckBox
-            android:id="@+id/pointGraph"
-            android:text="Point Graph"
-            android:buttonTint="@color/colorPrimaryDark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            <CheckBox
+                android:id="@+id/pointGraph"
+                android:text="Point Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
         </LinearLayout>
 
         <Button
@@ -172,11 +172,11 @@
 
         </Button>
 
-       <TextView
-           android:id="@+id/displayText"
-           android:textSize="15dp"
-           android:textColor="#123456"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/displayText"
+            android:textSize="15dp"
+            android:textColor="#123456"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
     </LinearLayout>
 </ScrollView>

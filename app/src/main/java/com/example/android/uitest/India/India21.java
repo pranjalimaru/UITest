@@ -8,35 +8,37 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.android.uitest.R;
-import com.jjoe64.graphview.GraphView;
-import com.jjoe64.graphview.LegendRenderer;
-import com.jjoe64.graphview.helper.StaticLabelsFormatter;
-import com.jjoe64.graphview.series.BarGraphSeries;
-import com.jjoe64.graphview.series.DataPoint;
-import com.jjoe64.graphview.series.DataPointInterface;
-import com.jjoe64.graphview.series.LineGraphSeries;
-import com.jjoe64.graphview.series.OnDataPointTapListener;
-import com.jjoe64.graphview.series.PointsGraphSeries;
-import com.jjoe64.graphview.series.Series;
-
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.example.android.uitest.Gujarat.Gujarat21;
+import com.example.android.uitest.Haryana.Haryana21;
+import com.example.android.uitest.HimachalPradesh.hp21;
+import com.example.android.uitest.R;
+import com.jjoe64.graphview.LegendRenderer;
+import com.jjoe64.graphview.helper.StaticLabelsFormatter;
+import com.jjoe64.graphview.series.DataPointInterface;
+import com.jjoe64.graphview.series.OnDataPointTapListener;
+import com.jjoe64.graphview.series.PointsGraphSeries;
+import com.jjoe64.graphview.series.Series;
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.ValueDependentColor;
+import com.jjoe64.graphview.series.BarGraphSeries;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
+import java.io.InputStream;
 
 
 public class India21 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
@@ -55,11 +57,9 @@ public class India21 extends AppCompatActivity implements AdapterView.OnItemSele
     ArrayList<String []> mapData = new ArrayList<>();
     String[] content;
     String StringAge=" ", StringDistrict;
-    private String result = " ";
     ArrayList<Integer> SeriesToAdd = new ArrayList<>();
-    int rowNo, col=0, bar=0, line=0, point=0;
+    int col=0, bar=0, line=0, point=0;
     ArrayList<String> colors = new ArrayList<>();
-    String list;
     AlertDialog mDialog;
 
     @Override
@@ -163,27 +163,27 @@ public class India21 extends AppCompatActivity implements AdapterView.OnItemSele
         colors.add("#123456");
         colors.add("#890678");
         colors.add("#345123");
-        colors.add("#456123");
+        colors.add("#656123");
         colors.add("#098567");
         colors.add("#567123");
-        colors.add("#456712");
+        colors.add("#756712");
         colors.add("#126534");
         colors.add("#984589");
-        colors.add("#195713");
+        colors.add("#795713");
         colors.add("#108356");
-        colors.add("#196734");
+        colors.add("#996734");
         colors.add("#124556");
-        colors.add("#896378");
-        colors.add("#341223");
+        colors.add("#396378");
+        colors.add("#641223");
         colors.add("#456723");
         colors.add("#098127");
         colors.add("#534123");
-        colors.add("#456232");
+        colors.add("#356232");
         colors.add("#122344");
         colors.add("#984239");
         colors.add("#191233");
-        colors.add("#108876");
-        colors.add("#196124");
+        colors.add("#348876");
+        colors.add("#876124");
 
 
         districtSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -236,10 +236,11 @@ public class India21 extends AppCompatActivity implements AdapterView.OnItemSele
         district.add("Puducherry");
         district.add("Andaman Nicobar Islands");
 
+
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, district);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         districtSpinner.setAdapter(dataAdapter);
 
@@ -258,7 +259,7 @@ public class India21 extends AppCompatActivity implements AdapterView.OnItemSele
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, age);
         // Drop down layout style - list view with radio button
-        dataAdapter_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter_1.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         ageSpinner.setAdapter(dataAdapter_1);
 
@@ -277,7 +278,6 @@ public class India21 extends AppCompatActivity implements AdapterView.OnItemSele
             @Override
             public void onClick(View view) {
                 List<String[]> csvContent = readCVSFromAssetFolder();
-                printCVSContent(csvContent);
                 List<String[]> trial = makeAnother(csvContent, StringDistrict, StringAge);
                 for(int i=0;i<SeriesToAdd.size();i++){
                     int rowNo = SeriesToAdd.get(i);
@@ -332,7 +332,7 @@ public class India21 extends AppCompatActivity implements AdapterView.OnItemSele
             }
 
             if(rows[3].matches(age)){
-                if(rows[1].contains(stringDistrict)) {
+                if(rows[1].toUpperCase().contains(stringDistrict.toUpperCase())) {
                     another.add(rows);
                 }
             }
@@ -384,7 +384,7 @@ public class India21 extends AppCompatActivity implements AdapterView.OnItemSele
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India21.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India21.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -399,9 +399,6 @@ public class India21 extends AppCompatActivity implements AdapterView.OnItemSele
         mGraph.getLegendRenderer().setVisible(true);
         mGraph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
         //series.setSpacing(50);
-        String setCol = colors.get(col);
-        series.setColor(Color.parseColor(setCol));
-        col++;
     }
 
     private void createPointGraphSeries(List<String[]> result, int rowNo, String[] listItems){
@@ -419,7 +416,7 @@ public class India21 extends AppCompatActivity implements AdapterView.OnItemSele
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India21.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India21.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -460,19 +457,19 @@ public class India21 extends AppCompatActivity implements AdapterView.OnItemSele
         BarGraphSeries<DataPoint> series = new BarGraphSeries<DataPoint>(dataPoints);
         mGraph.addSeries(series);
         series.setDrawValuesOnTop(true);
-        series.setValuesOnTopColor(Color.RED);
+        //series.setValuesOnTopColor(Color.RED);
         series.setTitle(listItems[rowNo]);
         //series.setColor(Color.GREEN);
-       // series.setValueDependentColor(new ValueDependentColor<DataPoint>() {
-         //   @Override
-           // public int get(DataPoint data) {
-             //   return Color.rgb((int) data.getX()*255/4, (int) Math.abs(data.getY()*255/6), 100);
-            //}
+        //  series.setValueDependentColor(new ValueDependentColor<DataPoint>() {
+        //    @Override
+        //  public int get(DataPoint data) {
+        //    return Color.rgb((int) data.getX()*255/4, (int) Math.abs(data.getY()*255/6), 100);
+        //}
         //});
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India21.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India21.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 

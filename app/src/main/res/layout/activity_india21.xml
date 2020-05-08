@@ -35,19 +35,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
 
             <Spinner
                 android:id="@+id/districtSpinner"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:gravity="right"></Spinner>
+                android:gravity="left"></Spinner>
 
             <Spinner
                 android:id="@+id/ageSpinner"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:gravity="right"></Spinner>
@@ -74,25 +74,28 @@
 
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <CheckBox
                 android:id="@+id/barGraph"
                 android:text="Bar Graph"
+                android:buttonTint="@color/colorPrimaryDark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></CheckBox>
 
             <CheckBox
                 android:id="@+id/lineGraph"
                 android:text="Line Graph"
+                android:buttonTint="@color/colorPrimaryDark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></CheckBox>
 
             <CheckBox
                 android:id="@+id/pointGraph"
                 android:text="Point Graph"
+                android:buttonTint="@color/colorPrimaryDark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></CheckBox>
         </LinearLayout>

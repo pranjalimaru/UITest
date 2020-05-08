@@ -15,7 +15,7 @@
         android:paddingTop="50dp"
         android:paddingRight="50dp"
         android:paddingBottom="50dp"
-        tools:context="com.example.android.uitest.India.India33">
+        tools:context="com.example.android.uitest.HimachalPradesh.hp33">
 
         <TextView
             android:id="@+id/content_from_server"
@@ -32,14 +32,15 @@
 
 
         <LinearLayout
-            android:layout_width="105dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="left"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <RadioGroup
@@ -47,6 +48,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <RadioButton
@@ -91,7 +93,7 @@
 
         <Button
             android:id="@+id/multiSelect"
-            android:text="Select the states"
+            android:text="Select states/uts"
             style="@style/buttonDesign"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
@@ -108,27 +110,30 @@
         </TextView>
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        <CheckBox
-            android:id="@+id/barGraph"
-            android:text="Bar Graph"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/lineGraph"
-            android:text="Line Graph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            <CheckBox
+                android:id="@+id/barGraph"
+                android:text="Bar Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
 
-        <CheckBox
-            android:id="@+id/pointGraph"
-            android:text="Point Graph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            <CheckBox
+                android:id="@+id/lineGraph"
+                android:text="Line Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/pointGraph"
+                android:text="Point Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
         </LinearLayout>
         <Button
             android:id="@+id/graphButton"

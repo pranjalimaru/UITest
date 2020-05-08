@@ -203,6 +203,7 @@ public class India22 extends AppCompatActivity implements AdapterView.OnItemSele
         });
 
         choice = new ArrayList<String>();
+        choice.add("Select from the following characteristics");
         choice.add("Total Persons");
         choice.add("Total Males");
         choice.add("Total Females");
@@ -234,7 +235,7 @@ public class India22 extends AppCompatActivity implements AdapterView.OnItemSele
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, choice);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         choiceSpinner.setAdapter(dataAdapter);
 
@@ -254,7 +255,7 @@ public class India22 extends AppCompatActivity implements AdapterView.OnItemSele
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, age);
         // Drop down layout style - list view with radio button
-        dataAdapter_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter_1.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         ageSpinner.setAdapter(dataAdapter_1);
 
@@ -389,7 +390,7 @@ public class India22 extends AppCompatActivity implements AdapterView.OnItemSele
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India22.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India22.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -421,7 +422,7 @@ public class India22 extends AppCompatActivity implements AdapterView.OnItemSele
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India22.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India22.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -454,74 +455,22 @@ public class India22 extends AppCompatActivity implements AdapterView.OnItemSele
         //series.setValuesOnTopColor(Color.RED);
         series.setTitle(title);
         //series.setColor(Color.GREEN);
-        series.setValueDependentColor(new ValueDependentColor<DataPoint>() {
-            @Override
-            public int get(DataPoint data) {
-                return Color.rgb((int) data.getX()*255/4, (int) Math.abs(data.getY()*255/6), 100);
-            }
-        });
+
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India22.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India22.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
         mGraph.getLegendRenderer().setVisible(true);
         mGraph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
         series.setSpacing(50);
+        String setCol = colors.get(col);
+        series.setColor(Color.parseColor(setCol));
+        col++;
     }
 
-    private void createBarChartGraph(List<String[]> result){
-        DataPoint[] dataPoints = new DataPoint[result.size()];
-        DataPoint[] dataPoints_1 = new DataPoint[result.size()];
-
-
-        for (int i = 0; i < result.size(); i++){
-            String [] rows = result.get(i);
-            //Log.d(TAG, "Output " + Integer.parseInt(rows[0]) + " " + Integer.parseInt(rows[1]));
-            dataPoints[i] = new DataPoint(Integer.parseInt(rows[0]), Integer.parseInt(rows[4]));
-            dataPoints_1[i] = new DataPoint(Integer.parseInt(rows[0]), Integer.parseInt(rows[5]));
-        }
-        BarGraphSeries<DataPoint> series = new BarGraphSeries<DataPoint>(dataPoints);
-        BarGraphSeries<DataPoint> series_1 = new BarGraphSeries<DataPoint>(dataPoints_1);
-
-        mGraph.addSeries(series);
-        series.setTitle("Education Graph");
-        series.setDrawValuesOnTop(true);
-        series.setValuesOnTopColor(Color.RED);
-        series.setColor(Color.GREEN);
-        series.setOnDataPointTapListener(new OnDataPointTapListener() {
-            @Override
-            public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India22.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        mGraph.addSeries(series_1);
-        series_1.setDrawValuesOnTop(true);
-        series_1.setValuesOnTopColor(Color.RED);
-        series_1.setColor(Color.BLUE);
-
-        mGraph.getLegendRenderer().setVisible(true);
-        mGraph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
-
-      /*series.setValueDependentColor(new ValueDependentColor<DataPoint>() {
-          @Override
-          public int get(DataPoint data) {
-              return Color.rgb((int) data.getX()*255/4, (int) Math.abs(data.getY()*255/6), 100);
-          }
-      }); */
-        series.setSpacing(50);
-
-     /* series_1.setValueDependentColor(new ValueDependentColor<DataPoint>() {
-         @Override
-          public int get(DataPoint data) {
-              return Color.rgb((int) data.getX()*255/4, (int) Math.abs(data.getY()*255/6), 100);
-          }
-      }); */
-        series_1.setSpacing(50);
-    }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

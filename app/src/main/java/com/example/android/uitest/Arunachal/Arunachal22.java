@@ -234,7 +234,7 @@ public class Arunachal22 extends AppCompatActivity implements AdapterView.OnItem
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, choice);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         choiceSpinner.setAdapter(dataAdapter);
 
@@ -254,7 +254,7 @@ public class Arunachal22 extends AppCompatActivity implements AdapterView.OnItem
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, age);
         // Drop down layout style - list view with radio button
-        dataAdapter_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter_1.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         ageSpinner.setAdapter(dataAdapter_1);
 

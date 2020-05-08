@@ -72,7 +72,7 @@ public class jh22 extends AppCompatActivity implements AdapterView.OnItemSelecte
         choiceSpinner=(Spinner)findViewById(R.id.choiceSpinner);
         mSelect = (Button) findViewById(R.id.multiSelect);
         mItemSelected = (TextView) findViewById(R.id.textViewMultiple);
-        listItems = getResources().getStringArray(R.array.JammuKashmir);
+        listItems = getResources().getStringArray(R.array.Jharkhand);
         checkedItems = new boolean[listItems.length];
         removeGraph = (Button)findViewById(R.id.removeSeries);
         barGraph = findViewById(R.id.barGraph);
@@ -234,7 +234,7 @@ public class jh22 extends AppCompatActivity implements AdapterView.OnItemSelecte
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, choice);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         choiceSpinner.setAdapter(dataAdapter);
 
@@ -254,7 +254,7 @@ public class jh22 extends AppCompatActivity implements AdapterView.OnItemSelecte
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, age);
         // Drop down layout style - list view with radio button
-        dataAdapter_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter_1.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         ageSpinner.setAdapter(dataAdapter_1);
 

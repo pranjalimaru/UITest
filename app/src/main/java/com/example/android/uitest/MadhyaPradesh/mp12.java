@@ -135,7 +135,7 @@ public class mp12 extends AppCompatActivity implements AdapterView.OnItemSelecte
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, choice);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         choiceSpinner.setAdapter(dataAdapter);
 
@@ -171,7 +171,7 @@ public class mp12 extends AppCompatActivity implements AdapterView.OnItemSelecte
         // Creating adapter for spinner
         ArrayAdapter<String> ageAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, age);
         // Drop down layout style - list view with radio button
-        ageAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ageAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         ageSpinner.setAdapter(ageAdapter);
 
@@ -266,6 +266,8 @@ public class mp12 extends AppCompatActivity implements AdapterView.OnItemSelecte
         StaticLabelsFormatter staticLabelsFormatter = new StaticLabelsFormatter(mGraph);
         //staticLabelsFormatter.setHorizontalLabels(new String[] {"old", "middle", "new"});
         mGraph.getGridLabelRenderer().setLabelFormatter(staticLabelsFormatter);
+        mGraph.getGridLabelRenderer().setHorizontalAxisTitle("Districts");
+
 
 
         removeGraph.setOnClickListener(new View.OnClickListener() {

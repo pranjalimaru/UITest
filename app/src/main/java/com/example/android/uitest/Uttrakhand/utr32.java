@@ -174,7 +174,7 @@ public class utr32 extends AppCompatActivity {
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, district);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         districtSpinner.setAdapter(dataAdapter);
 
@@ -228,7 +228,7 @@ public class utr32 extends AppCompatActivity {
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, choice);
         // Drop down layout style - list view with radio button
-        dataAdapter_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter_1.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         choiceSpinner.setAdapter(dataAdapter_1);
 
@@ -308,6 +308,7 @@ public class utr32 extends AppCompatActivity {
         StaticLabelsFormatter staticLabelsFormatter = new StaticLabelsFormatter(mGraph);
         staticLabelsFormatter.setHorizontalLabels(new String[]{"--", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "5-19", "--"});
         mGraph.getGridLabelRenderer().setLabelFormatter(staticLabelsFormatter);
+        mGraph.getGridLabelRenderer().setHorizontalAxisTitle("Age");
 
     }
 

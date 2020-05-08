@@ -1,0 +1,16 @@
+<CheckedTextView android:id="@+id/textViewSpinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:ellipsize="marquee"
+    android:fadingEdge="horizontal"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:scrollHorizontally="true"
+    android:text="Simple application that shows how to use marquee, with a long text"
+    android:textColor="@drawable/state_selector_color"
+    android:padding="10dp"
+    android:fontFamily="serif"
+    android:textSize="15sp"
+    android:singleLine="false"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+

@@ -34,13 +34,14 @@
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.5"
                 android:gravity="left"
                 android:orientation="vertical">
 
@@ -71,6 +72,7 @@
                 android:layout_margin="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.5"
                 android:gravity="right"></Spinner>
         </LinearLayout>
 
@@ -93,7 +95,6 @@
         <TextView
             android:id="@+id/textViewMultiple"
             android:textStyle="bold"
-            android:text="The selected options are: "
             android:textColor="#123456"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
@@ -101,9 +102,9 @@
         </TextView>
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <CheckBox
             android:id="@+id/barGraph"
             android:text="Bar Graph"

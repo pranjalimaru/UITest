@@ -204,7 +204,7 @@ public class AndamanNicobar21 extends AppCompatActivity implements AdapterView.O
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, district);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         districtSpinner.setAdapter(dataAdapter);
 
@@ -223,7 +223,7 @@ public class AndamanNicobar21 extends AppCompatActivity implements AdapterView.O
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, age);
         // Drop down layout style - list view with radio button
-        dataAdapter_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter_1.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         ageSpinner.setAdapter(dataAdapter_1);
 
@@ -233,6 +233,7 @@ public class AndamanNicobar21 extends AppCompatActivity implements AdapterView.O
         mGraph.getViewport().setScrollable(true);  // activate horizontal scrolling
         mGraph.getViewport().setScalableY(true);  // activate horizontal and vertical zooming and scrolling
         mGraph.getViewport().setScrollableY(true);  // activate vertical scrolling
+
         mGraph.getViewport().setMinX(-1);
         mGraph.getViewport().setMaxX(3);
         fileContent = (TextView)findViewById(R.id.content_from_server);

@@ -113,27 +113,28 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+
             <CheckBox
                 android:id="@+id/barGraph"
-                android:text="Bar Graph"
-                android:buttonTint="@color/colorPrimaryDark"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></CheckBox>
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Bar Graph"></CheckBox>
 
             <CheckBox
                 android:id="@+id/lineGraph"
-                android:text="Line Graph"
-                android:buttonTint="@color/colorPrimaryDark"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></CheckBox>
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Line Graph"></CheckBox>
 
             <CheckBox
                 android:id="@+id/pointGraph"
-                android:text="Point Graph"
-                android:buttonTint="@color/colorPrimaryDark"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></CheckBox>
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Point Graph"></CheckBox>
         </LinearLayout>
 
         <Button

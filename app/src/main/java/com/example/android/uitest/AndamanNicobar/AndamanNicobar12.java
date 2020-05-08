@@ -89,6 +89,7 @@ public class AndamanNicobar12 extends AppCompatActivity implements AdapterView.O
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 rowNo = parent.getSelectedItemPosition();
                 String name = parent.getSelectedItem().toString();
+
                 listItems.add(name);
                 Log.d(TAG, "rowNo" + rowNo);
             }
@@ -131,7 +132,7 @@ public class AndamanNicobar12 extends AppCompatActivity implements AdapterView.O
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, choice);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         choiceSpinner.setAdapter(dataAdapter);
 
@@ -167,7 +168,7 @@ public class AndamanNicobar12 extends AppCompatActivity implements AdapterView.O
         // Creating adapter for spinner
         ArrayAdapter<String> ageAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, age);
         // Drop down layout style - list view with radio button
-        ageAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ageAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         ageSpinner.setAdapter(ageAdapter);
 
@@ -202,6 +203,8 @@ public class AndamanNicobar12 extends AppCompatActivity implements AdapterView.O
         mGraph.getViewport().setScrollable(true);  // activate horizontal scrolling
         mGraph.getViewport().setScalableY(true);  // activate horizontal and vertical zooming and scrolling
         mGraph.getViewport().setScrollableY(true);  // activate vertical scrolling
+        mGraph.getViewport().setMinX(632);
+        mGraph.getViewport().setMaxX(645);
         fileContent = (TextView)findViewById(R.id.content_from_server);
         Button loadTextButton = (Button)findViewById(R.id.load_file_from_server);
 
@@ -262,6 +265,8 @@ public class AndamanNicobar12 extends AppCompatActivity implements AdapterView.O
         StaticLabelsFormatter staticLabelsFormatter = new StaticLabelsFormatter(mGraph);
         //staticLabelsFormatter.setHorizontalLabels(new String[] {"old", "middle", "new"});
         mGraph.getGridLabelRenderer().setLabelFormatter(staticLabelsFormatter);
+        mGraph.getGridLabelRenderer().setHorizontalAxisTitle("Districts");
+
 
 
         removeGraph.setOnClickListener(new View.OnClickListener() {

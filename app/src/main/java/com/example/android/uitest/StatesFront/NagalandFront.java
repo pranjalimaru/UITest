@@ -102,6 +102,7 @@ import com.example.android.uitest.Nagaland.ngl12;
 import com.example.android.uitest.Nagaland.ngl13;
 import com.example.android.uitest.Nagaland.ngl21;
 import com.example.android.uitest.Nagaland.ngl22;
+import com.example.android.uitest.Nagaland.ngl23;
 import com.example.android.uitest.Nagaland.ngl31;
 import com.example.android.uitest.Nagaland.ngl32;
 import com.example.android.uitest.Nagaland.ngl33;
@@ -171,7 +172,7 @@ public class NagalandFront extends AppCompatActivity {
         button23.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NagalandFront.this, ngl32.class);
+                Intent intent = new Intent(NagalandFront.this, ngl23.class);
                 startActivity(intent);
 
             }

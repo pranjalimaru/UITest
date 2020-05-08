@@ -14,7 +14,7 @@
         android:paddingTop="50dp"
         android:paddingRight="50dp"
         android:paddingBottom="50dp"
-        tools:context="com.example.android.uitest.India.India32">
+        tools:context="com.example.android.uitest.HimachalPradesh.hp32">
 
 
         <TextView
@@ -32,6 +32,11 @@
 
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -61,28 +66,27 @@
                     android:buttonTint="@color/colorPrimaryDark"
                     android:text="Rural"></CheckBox>
 
-
             </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
 
             <Spinner
                 android:id="@+id/districtSpinner"
-                android:layout_width="72dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
                 android:gravity="right"></Spinner>
 
-            <Spinner
-                android:id="@+id/choiceSpinner"
-                android:layout_width="123dp"
-                android:layout_height="wrap_content"></Spinner>
 
 
         </LinearLayout>
+
+
+        <Spinner
+            android:id="@+id/choiceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+
+
 
         <Button
             android:id="@+id/btnDisplay"
@@ -96,7 +100,6 @@
         <TextView
             android:id="@+id/textViewMultiple"
             android:textStyle="bold"
-            android:text="The selected options are: "
             android:textColor="#123456"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
@@ -107,24 +110,27 @@
 
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <CheckBox
                 android:id="@+id/barGraph"
+                android:buttonTint="@color/colorPrimaryDark"
                 android:text="Bar Graph"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></CheckBox>
 
             <CheckBox
                 android:id="@+id/lineGraph"
+                android:buttonTint="@color/colorPrimaryDark"
                 android:text="Line Graph"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></CheckBox>
 
             <CheckBox
                 android:id="@+id/pointGraph"
+                android:buttonTint="@color/colorPrimaryDark"
                 android:text="Point Graph"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></CheckBox>
@@ -132,7 +138,7 @@
 
         <Button
             android:id="@+id/graphButton"
-            android:text="Graph confirm"
+            android:text="Confirm graph type"
             style="@style/buttonDesign"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"

@@ -191,7 +191,7 @@ public class odisha11 extends AppCompatActivity implements AdapterView.OnItemSel
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, age);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         ageSpinner.setAdapter(dataAdapter);
 
@@ -302,6 +302,7 @@ public class odisha11 extends AppCompatActivity implements AdapterView.OnItemSel
         StaticLabelsFormatter staticLabelsFormatter = new StaticLabelsFormatter(mGraph);
         //staticLabelsFormatter.setHorizontalLabels(new String[] {"old", "middle", "new"});
         mGraph.getGridLabelRenderer().setLabelFormatter(staticLabelsFormatter);
+        mGraph.getGridLabelRenderer().setHorizontalAxisTitle("Districts");
 
 
     }

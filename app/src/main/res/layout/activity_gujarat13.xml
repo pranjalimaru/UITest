@@ -96,7 +96,7 @@
             android:id="@+id/multiSelect"
             style="@style/buttonDesign"
             android:layout_margin="10dp"
-            android:text="Select ages from the following options"
+            android:text="Select one or more age groups from the following options"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"></Button>
 
@@ -113,9 +113,9 @@
 
 
 <LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
         <CheckBox
             android:id="@+id/barGraph"

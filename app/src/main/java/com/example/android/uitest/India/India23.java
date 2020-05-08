@@ -82,7 +82,7 @@ public class India23 extends AppCompatActivity implements AdapterView.OnItemSele
 
         districtSpinner.setOnItemSelectedListener(this);
         district = new ArrayList<String>();
-        district.add("Select state");
+        district.add("Select a state");
         district.add("Jammu Kashmir");
         district.add("Himachal Pradesh");
         district.add("Punjab");
@@ -122,7 +122,7 @@ public class India23 extends AppCompatActivity implements AdapterView.OnItemSele
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, district);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         districtSpinner.setAdapter(dataAdapter);
 
@@ -174,7 +174,7 @@ public class India23 extends AppCompatActivity implements AdapterView.OnItemSele
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter_1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, choice);
         // Drop down layout style - list view with radio button
-        dataAdapter_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter_1.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         choiceSpinner.setAdapter(dataAdapter_1);
 
@@ -351,7 +351,7 @@ public class India23 extends AppCompatActivity implements AdapterView.OnItemSele
 
 
             if (rows[3].matches(age)) {
-                if(rows[1].contains(district))
+                if((rows[1].toLowerCase()).contains(district.toLowerCase()))
                     TotalData.add(rows);
 
             }
@@ -413,7 +413,7 @@ public class India23 extends AppCompatActivity implements AdapterView.OnItemSele
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India23.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India23.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -448,7 +448,7 @@ public class India23 extends AppCompatActivity implements AdapterView.OnItemSele
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India23.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India23.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -478,8 +478,8 @@ public class India23 extends AppCompatActivity implements AdapterView.OnItemSele
         }
         BarGraphSeries<DataPoint> series = new BarGraphSeries<DataPoint>(dataPoints);
         mGraph.addSeries(series);
-        series.setDrawValuesOnTop(true);
-        series.setValuesOnTopColor(Color.RED);
+        //series.setDrawValuesOnTop(true);
+        //series.setValuesOnTopColor(Color.RED);
         series.setTitle(title);
         //series.setColor(Color.GREEN);
         //series.setValueDependentColor(new ValueDependentColor<DataPoint>() {
@@ -491,7 +491,7 @@ public class India23 extends AppCompatActivity implements AdapterView.OnItemSele
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India23.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India23.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 

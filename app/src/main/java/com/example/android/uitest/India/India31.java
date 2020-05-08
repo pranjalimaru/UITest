@@ -270,7 +270,7 @@ public class India31 extends AppCompatActivity {
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, district);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         districtSpinner.setAdapter(dataAdapter);
 
@@ -289,10 +289,10 @@ public class India31 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 List<String[]> csvContent = readCVSFromAssetFolder();
-                printCVSContent(csvContent);
+                //printCVSContent(csvContent);
                 List<String[]> trial = makeAnother(csvContent, StringDistrict, TotRuUrb);
                 //createLineGraph(trial);
-                printCVSContent(trial);
+                //printCVSContent(trial);
                 for (int i = 0; i < SeriesToAdd.size(); i++) {
                     int rowNo = SeriesToAdd.get(i);
                     Log.d(TAG, "value: " + rowNo);
@@ -327,6 +327,7 @@ public class India31 extends AppCompatActivity {
         StaticLabelsFormatter staticLabelsFormatter = new StaticLabelsFormatter(mGraph);
         staticLabelsFormatter.setHorizontalLabels(new String[]{"--", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "5-19"});
         mGraph.getGridLabelRenderer().setLabelFormatter(staticLabelsFormatter);
+        mGraph.getGridLabelRenderer().setHorizontalAxisTitle("Age");
 
     }
 
@@ -340,7 +341,7 @@ public class India31 extends AppCompatActivity {
             }
 
             if (rows[2].matches(TotRuUrb)) {
-                if (rows[1].contains(stringDistrict)) {
+                if ((rows[1].toLowerCase()).contains(stringDistrict.toLowerCase())) {
                     another.add(rows);
                 }
             }
@@ -374,7 +375,7 @@ public class India31 extends AppCompatActivity {
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India31.this, "Series1: On Data Point clicked: " + dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India31.this, "On Data Point clicked: " + dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -406,7 +407,7 @@ public class India31 extends AppCompatActivity {
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India31.this, "Series1: On Data Point clicked: " + dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India31.this, "On Data Point clicked: " + dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -469,16 +470,11 @@ public class India31 extends AppCompatActivity {
         //series.setValuesOnTopColor(Color.RED);
         series.setTitle(listItems[rowNo]);
         //series.setColor(Color.GREEN);
-        series.setValueDependentColor(new ValueDependentColor<DataPoint>() {
-            @Override
-            public int get(DataPoint data) {
-                return Color.rgb((int) data.getX() * 255 / 4, (int) Math.abs(data.getY() * 255 / 6), 100);
-            }
-        });
+
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India31.this, "Series1: On Data Point clicked: " + dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India31.this, "On Data Point clicked: " + dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 

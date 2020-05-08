@@ -62,7 +62,7 @@ public class sik13 extends AppCompatActivity implements AdapterView.OnItemSelect
     Button removeGraph, graphConfirm;
     Spinner ageSpinner, choiceSpinner;
     private CheckBox barGraph, lineGraph, pointGraph;
-    int col=0, bar=0,line=0,point=0, start=99;
+    int col=0, bar=0,line=0,point=0, start=241;
     ArrayList<String> colors = new ArrayList<>();
     List<String> choice;
     Button mSelect;
@@ -150,7 +150,7 @@ public class sik13 extends AppCompatActivity implements AdapterView.OnItemSelect
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, choice);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         choiceSpinner.setAdapter(dataAdapter);
 
@@ -337,6 +337,7 @@ public class sik13 extends AppCompatActivity implements AdapterView.OnItemSelect
         StaticLabelsFormatter staticLabelsFormatter = new StaticLabelsFormatter(mGraph);
         //staticLabelsFormatter.setHorizontalLabels(new String[] {"old", "middle", "new"});
         mGraph.getGridLabelRenderer().setLabelFormatter(staticLabelsFormatter);
+        mGraph.getGridLabelRenderer().setHorizontalAxisTitle("Districts");
 
     }
 

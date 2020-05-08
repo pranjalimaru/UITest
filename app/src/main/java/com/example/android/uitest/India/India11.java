@@ -182,7 +182,7 @@ public class India11 extends AppCompatActivity implements AdapterView.OnItemSele
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, age);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
         // attaching data adapter to spinner
         ageSpinner.setAdapter(dataAdapter);
 
@@ -259,7 +259,7 @@ public class India11 extends AppCompatActivity implements AdapterView.OnItemSele
                    if(point==1)createPointGraphSeries(trial,rowNo,listItems);
                 }
 
-                for(int i=0;i<34;i++){
+                for(int i=0;i<35;i++){
                     displayText.append(i+1 + "");
                     displayText.append(": ");
                     displayText.append(indiaStates[i]);
@@ -292,6 +292,8 @@ public class India11 extends AppCompatActivity implements AdapterView.OnItemSele
         StaticLabelsFormatter staticLabelsFormatter = new StaticLabelsFormatter(mGraph);
         //staticLabelsFormatter.setHorizontalLabels(new String[] {"old", "middle", "new"});
         mGraph.getGridLabelRenderer().setLabelFormatter(staticLabelsFormatter);
+        mGraph.getGridLabelRenderer().setHorizontalAxisTitle("States");
+
 
 
     }
@@ -353,7 +355,7 @@ public class India11 extends AppCompatActivity implements AdapterView.OnItemSele
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India11.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India11.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -402,7 +404,7 @@ public class India11 extends AppCompatActivity implements AdapterView.OnItemSele
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India11.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India11.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -444,7 +446,7 @@ public class India11 extends AppCompatActivity implements AdapterView.OnItemSele
         series.setOnDataPointTapListener(new OnDataPointTapListener() {
             @Override
             public void onTap(Series series, DataPointInterface dataPoint) {
-                Toast.makeText(India11.this, "Series1: On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(India11.this, "On Data Point clicked: "+ dataPoint, Toast.LENGTH_SHORT).show();
             }
         });
 

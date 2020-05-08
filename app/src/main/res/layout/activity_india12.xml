@@ -34,7 +34,7 @@
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
@@ -42,6 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="left"
+                android:layout_weight="0.5"
                 android:orientation="vertical">
 
                 <CheckBox
@@ -69,16 +70,17 @@
             <Spinner
                 android:id="@+id/ageSpinner"
                 android:layout_margin="20dp"
+                android:layout_weight="0.5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="right"></Spinner>
         </LinearLayout>
 
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:id="@+id/choiceSpinner"></Spinner>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/choiceSpinner"></Spinner>
 
 
         <Button
@@ -93,7 +95,6 @@
         <TextView
             android:id="@+id/textViewMultiple"
             android:textStyle="bold"
-            android:text="The selected options are: "
             android:textColor="#123456"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
@@ -101,29 +102,29 @@
         </TextView>
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <CheckBox
-            android:id="@+id/barGraph"
-            android:text="Bar Graph"
-            android:buttonTint="@color/colorPrimaryDark"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/barGraph"
+                android:text="Bar Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
 
-        <CheckBox
-            android:id="@+id/lineGraph"
-            android:text="Line Graph"
-            android:buttonTint="@color/colorPrimaryDark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            <CheckBox
+                android:id="@+id/lineGraph"
+                android:text="Line Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
 
-        <CheckBox
-            android:id="@+id/pointGraph"
-            android:text="Point Graph"
-            android:buttonTint="@color/colorPrimaryDark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            <CheckBox
+                android:id="@+id/pointGraph"
+                android:text="Point Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
 
         </LinearLayout>
 

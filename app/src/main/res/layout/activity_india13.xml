@@ -96,7 +96,7 @@
             android:id="@+id/multiSelect"
             style="@style/buttonDesign"
             android:layout_margin="10dp"
-            android:text="Select ages from the following options"
+            android:text="Select one or more age groups from the following options"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"></Button>
 
@@ -112,33 +112,36 @@
         </TextView>
 
 
-<LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-        <CheckBox
-            android:id="@+id/barGraph"
-            android:text="Bar Graph"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/lineGraph"
-            android:text="Line Graph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
+            <CheckBox
+                android:id="@+id/barGraph"
+                android:text="Bar Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
 
-        <CheckBox
-            android:id="@+id/pointGraph"
-            android:text="Point Graph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></CheckBox>
-</LinearLayout>
+            <CheckBox
+                android:id="@+id/lineGraph"
+                android:text="Line Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/pointGraph"
+                android:text="Point Graph"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
+        </LinearLayout>
 
         <Button
             android:id="@+id/graphButton"
-            android:text="Graph confirm"
+            android:text="Confirm graph type"
             style="@style/buttonDesign"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
